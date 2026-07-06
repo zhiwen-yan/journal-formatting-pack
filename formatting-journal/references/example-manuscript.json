@@ -1,0 +1,82 @@
+{
+  "journal": "Nutrients",
+  "article_type": "Original Research",
+  "title": "Dietary Pattern and Cardiometabolic Risk in Community Adults",
+  "running_title": "Dietary Pattern and Risk",
+  "language": "English",
+  "reference_style": "Vancouver",
+  "authors": [
+    {
+      "name": "Author One",
+      "affiliations": [1],
+      "email": "author.one@example.com",
+      "corresponding": true
+    },
+    {
+      "name": "Author Two",
+      "affiliations": [1, 2]
+    }
+  ],
+  "affiliations": [
+    {
+      "id": 1,
+      "text": "Department of Nutrition, Example University, Shanghai, China"
+    },
+    {
+      "id": 2,
+      "text": "School of Public Health, Example Hospital, Beijing, China"
+    }
+  ],
+  "abstract": "Background: TODO. Methods: TODO. Results: TODO. Conclusions: TODO.",
+  "keywords": ["diet", "nutrition", "cohort", "risk"],
+  "sections": [
+    {
+      "title": "Introduction",
+      "paragraphs": [
+        "TODO: Introduce the research problem, literature gap, and study objective."
+      ]
+    },
+    {
+      "title": "Materials and Methods",
+      "paragraphs": [
+        "TODO: Describe study design, participants, exposures, outcomes, and statistics."
+      ],
+      "subsections": [
+        {
+          "title": "Study Design and Participants",
+          "paragraphs": [
+            "TODO: Provide setting, recruitment window, inclusion criteria, and exclusions."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Results",
+      "paragraphs": [
+        "TODO: Report the main numerical findings in journal-ready prose."
+      ]
+    },
+    {
+      "title": "Discussion",
+      "paragraphs": [
+        "TODO: Interpret the findings, strengths, limitations, and implications."
+      ]
+    },
+    {
+      "title": "Conclusions",
+      "paragraphs": [
+        "TODO: State the final conclusion without overstating the evidence."
+      ]
+    }
+  ],
+  "declarations": {
+    "author_contributions": "Conceptualization, Author One; methodology, Author One and Author Two; writing-original draft, Author One; writing-review and editing, all authors.",
+    "funding": "TODO: Add funding statement or state no external funding.",
+    "institutional_review_board_statement": "TODO: Add approval committee name and number or confirm not applicable.",
+    "informed_consent_statement": "TODO: Add participant consent statement or confirm not applicable.",
+    "data_availability_statement": "TODO: State where the supporting data can be accessed.",
+    "acknowledgments": "TODO: Add acknowledgments or remove if not applicable.",
+    "conflicts_of_interest": "The authors declare no conflict of interest.",
+    "ai_use_disclosure": "TODO: State whether generative AI was used in drafting or analysis."
+  }
+}

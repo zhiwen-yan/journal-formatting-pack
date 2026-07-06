@@ -1,6 +1,6 @@
 ---
 name: formatting-nutrients
-description: Shortcut formatting skill for MDPI Nutrients submissions. Use when the user explicitly wants Nutrients formatting, asks to prepare a manuscript for Nutrients, or wants a fast MDPI journal-specific entry point instead of the broader formatting-mdpi skill. Check manuscript structure, references, author contributions, funding, institutional review board statement, informed consent statement, data availability statement, conflicts of interest, and Nutrients-specific submission readiness.
+description: Shortcut formatting skill for MDPI Nutrients submissions. Use when the user explicitly wants Nutrients formatting, asks to prepare a manuscript for Nutrients, or wants a fast MDPI journal-specific entry point instead of the broader formatting-mdpi skill. Check manuscript structure, references, author contributions, funding, institutional review board statement, informed consent statement, data availability statement, conflicts of interest, and Nutrients-specific submission readiness. Also use this skill when the user wants a generated Word or LaTeX manuscript skeleton targeted to Nutrients.
 ---
 
 # Nutrients Formatting
@@ -17,6 +17,17 @@ Prefer the current Nutrients instructions page or the user's uploaded template o
 2. Read the current Nutrients instructions page in `references/official-guidelines.md` or a newer user-provided guideline URL.
 3. Apply the `formatting-mdpi` workflow and statement checks, but treat Nutrients-specific journal instructions as final when they differ from general MDPI patterns.
 4. Output a checklist, revised structure, declaration text, or submission package material as requested.
+
+## File Outputs
+
+When the user wants a `.docx` or `.tex` manuscript skeleton, use `scripts/generate_manuscript.py`.
+
+This wrapper preselects:
+
+- style: `mdpi`
+- journal: `Nutrients`
+
+If the user wants Zotero-aware references and no Zotero `.bib` source is configured, stop and prompt for configuration or leave a references placeholder.
 
 ## Required Inputs
 

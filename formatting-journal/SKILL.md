@@ -1,6 +1,6 @@
 ---
 name: formatting-journal
-description: Universal academic journal formatting and submission-readiness router. Use when the user asks to format, check, revise, polish, package, or prepare a manuscript for journal submission, including SCI, SSCI, PubMed-indexed, medical, nursing, public health, nutrition, pharmacology, life science, clinical research, systematic review, meta-analysis, case report, review, protocol, or original research manuscripts. Route publisher-specific tasks to formatting-frontiers, formatting-mdpi, formatting-wiley, formatting-elsevier, formatting-springer-nature, formatting-taylor-francis, formatting-sage, formatting-oup, formatting-plos, or formatting-generic.
+description: Universal academic journal formatting and submission-readiness router. Use when the user asks to format, check, revise, polish, package, or prepare a manuscript for journal submission, including SCI, SSCI, PubMed-indexed, medical, nursing, public health, nutrition, pharmacology, life science, clinical research, systematic review, meta-analysis, case report, review, protocol, or original research manuscripts. Route publisher-specific tasks to formatting-frontiers, formatting-mdpi, formatting-wiley, formatting-elsevier, formatting-springer-nature, formatting-taylor-francis, formatting-sage, formatting-oup, formatting-plos, or formatting-generic. Also use this skill when the user wants a generated Word manuscript skeleton or LaTeX manuscript skeleton.
 ---
 
 # Journal Formatting
@@ -51,6 +51,36 @@ Read `references/publisher-routing.md` when publisher identity, aliases, or firs
 4. Preserve scientific meaning and all factual content.
 5. Use placeholders for missing author, ethics, funding, trial registration, repository, DOI, PMID, and reference metadata.
 6. Produce the requested output plus a submission-readiness checklist.
+
+## Output File Generation
+
+When the user explicitly asks for a Word document or LaTeX manuscript skeleton, use `scripts/generate_manuscript.py`.
+
+Read `references/manuscript-generator.md` and use `references/example-manuscript.json` as the schema example.
+
+Supported file outputs:
+
+- `.docx` Word manuscript skeleton
+- `.tex` LaTeX manuscript skeleton
+
+The generator supports:
+
+- title page
+- abstract
+- keywords
+- structured main sections
+- declaration sections
+- references placeholder
+
+### Zotero Rules
+
+If the user wants the references area to connect to Zotero:
+
+- Use a Zotero-exported `.bib` file when available.
+- Accept either `--zotero-bib <path>` or `ZOTERO_BIB_PATH`.
+- If Zotero is not configured, do not invent references.
+- If Zotero is not configured, tell the user how to configure it and leave a references placeholder.
+- If the user says Zotero is mandatory, run the generator with `--zotero-mode required` so the script stops with a prompt instead of silently continuing.
 
 ## Universal Checklist
 

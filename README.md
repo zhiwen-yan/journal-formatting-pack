@@ -111,6 +111,47 @@ These skills work best when the user provides:
 - cover letter
 - response letter
 - reference-style cleanup
+- `.docx` manuscript skeleton generation
+- `.tex` manuscript skeleton generation
+
+## Generator Support
+
+The pack includes executable manuscript generators in:
+
+- `formatting-journal/scripts/generate_manuscript.py`
+- `formatting-mdpi/scripts/generate_manuscript.py`
+- `formatting-nutrients/scripts/generate_manuscript.py`
+- `formatting-foods/scripts/generate_manuscript.py`
+- `formatting-jcm/scripts/generate_manuscript.py`
+
+These generators can create:
+
+- Word manuscript skeletons
+- LaTeX manuscript skeletons
+
+Each generated file can include:
+
+- title page
+- abstract
+- keywords
+- body structure
+- declaration sections
+- references placeholder
+
+## Zotero Support
+
+The generators do not require a live Zotero connector. They support Zotero through an exported `.bib` file.
+
+Supported configuration:
+
+- `--zotero-bib "C:\path\to\library.bib"`
+- `ZOTERO_BIB_PATH=C:\path\to\library.bib`
+
+Behavior:
+
+- If Zotero is configured, LaTeX output inserts bibliography commands.
+- If Zotero is configured, Word output inserts a reminder to refresh the bibliography in Zotero for Word.
+- If Zotero is not configured, the generators print a prompt and leave a references placeholder.
 
 ## Source Policy
 

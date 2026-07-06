@@ -2,3 +2,11 @@
 Thumbs.db
 *.tmp
 *.log
+output/
+test-output/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*.synctex.gz
