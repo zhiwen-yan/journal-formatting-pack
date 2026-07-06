@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wiley Formatting"
+  short_description: "Format manuscripts for Wiley journals"
+  default_prompt: "Use $wiley-formatting to check my manuscript against Wiley journal requirements."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Journal Formatting"
+  short_description: "Route and prepare journal submissions"
+  default_prompt: "Use $journal-formatting to check and prepare my manuscript for the target journal."

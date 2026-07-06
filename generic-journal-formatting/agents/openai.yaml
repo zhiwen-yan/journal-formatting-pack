@@ -1,0 +1,4 @@
+interface:
+  display_name: "Generic Journal Formatting"
+  short_description: "General SCI submission formatting checks"
+  default_prompt: "Use $generic-journal-formatting to perform a general SCI manuscript formatting check."
