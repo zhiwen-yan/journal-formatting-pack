@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nutrients Formatting"
+  short_description: "Shortcut for MDPI Nutrients submissions"
+  default_prompt: "Use $formatting-nutrients to prepare my manuscript for Nutrients."

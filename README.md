@@ -6,33 +6,39 @@ This repository packages a publisher-aware journal formatting workflow for acade
 
 ## Included Skills
 
-- `journal-formatting`: universal entry point and router.
-- `frontiers-formatting`: Frontiers journals.
-- `mdpi-formatting`: MDPI journals.
-- `wiley-formatting`: Wiley journals.
-- `elsevier-formatting`: Elsevier and ScienceDirect journals.
-- `springer-nature-formatting`: Springer Nature, BMC, and Nature Portfolio journals.
-- `taylor-francis-formatting`: Taylor & Francis and Routledge journals.
-- `sage-formatting`: SAGE journals.
-- `oup-formatting`: Oxford University Press and Oxford Academic journals.
-- `plos-formatting`: PLOS journals.
-- `generic-journal-formatting`: fallback SCI and biomedical submission checklist.
+- `formatting-journal`: universal entry point and router.
+- `formatting-frontiers`: Frontiers journals.
+- `formatting-mdpi`: MDPI journals.
+- `formatting-wiley`: Wiley journals.
+- `formatting-elsevier`: Elsevier and ScienceDirect journals.
+- `formatting-springer-nature`: Springer Nature, BMC, and Nature Portfolio journals.
+- `formatting-taylor-francis`: Taylor & Francis and Routledge journals.
+- `formatting-sage`: SAGE journals.
+- `formatting-oup`: Oxford University Press and Oxford Academic journals.
+- `formatting-plos`: PLOS journals.
+- `formatting-generic`: fallback SCI and biomedical submission checklist.
+- `formatting-nutrients`: direct shortcut for MDPI Nutrients.
+- `formatting-foods`: direct shortcut for MDPI Foods.
+- `formatting-jcm`: direct shortcut for MDPI Journal of Clinical Medicine.
 
 ## Repository Layout
 
 ```text
 journal-formatting-pack/
-├── journal-formatting/
-├── frontiers-formatting/
-├── mdpi-formatting/
-├── wiley-formatting/
-├── elsevier-formatting/
-├── springer-nature-formatting/
-├── taylor-francis-formatting/
-├── sage-formatting/
-├── oup-formatting/
-├── plos-formatting/
-└── generic-journal-formatting/
+├── formatting-journal/
+├── formatting-frontiers/
+├── formatting-mdpi/
+├── formatting-wiley/
+├── formatting-elsevier/
+├── formatting-springer-nature/
+├── formatting-taylor-francis/
+├── formatting-sage/
+├── formatting-oup/
+├── formatting-plos/
+├── formatting-generic/
+├── formatting-nutrients/
+├── formatting-foods/
+└── formatting-jcm/
 ```
 
 Each skill contains:
@@ -52,9 +58,9 @@ Copy-Item -Path ".\*" -Destination "$HOME\.agents\skills" -Recurse -Force
 After installation, the paths should look like:
 
 ```text
-$HOME\.agents\skills\journal-formatting\SKILL.md
-$HOME\.agents\skills\frontiers-formatting\SKILL.md
-$HOME\.agents\skills\mdpi-formatting\SKILL.md
+$HOME\.agents\skills\formatting-journal\SKILL.md
+$HOME\.agents\skills\formatting-frontiers\SKILL.md
+$HOME\.agents\skills\formatting-mdpi\SKILL.md
 ```
 
 You can verify the install with:
@@ -68,13 +74,19 @@ Get-ChildItem "$HOME\.agents\skills" -Recurse -Filter "SKILL.md" | Select-Object
 Call the universal router when you want the skill to choose the publisher path:
 
 ```text
-Use journal-formatting to prepare this manuscript for Frontiers in Pharmacology as an Original Research article. First list missing information, then produce a submission-readiness checklist.
+Use formatting-journal to prepare this manuscript for Frontiers in Pharmacology as an Original Research article. First list missing information, then produce a submission-readiness checklist.
 ```
 
 Call a publisher-specific skill when you already know the target family:
 
 ```text
-Use mdpi-formatting for Nutrients. Check manuscript structure, references, declaration sections, and any missing submission statements.
+Use formatting-mdpi for Nutrients. Check manuscript structure, references, declaration sections, and any missing submission statements.
+```
+
+Or jump straight to a frequent journal shortcut:
+
+```text
+Use formatting-nutrients to prepare this manuscript for Nutrients.
 ```
 
 ## Expected Inputs

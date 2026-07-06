@@ -1,4 +1,0 @@
-interface:
-  display_name: "Elsevier Formatting"
-  short_description: "Format manuscripts for Elsevier journals"
-  default_prompt: "Use $elsevier-formatting to check my manuscript against Elsevier guide-for-authors requirements."

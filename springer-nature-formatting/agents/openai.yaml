@@ -1,4 +1,0 @@
-interface:
-  display_name: "Springer Nature Formatting"
-  short_description: "Format manuscripts for Springer Nature journals"
-  default_prompt: "Use $springer-nature-formatting to check my manuscript against Springer Nature or BMC requirements."

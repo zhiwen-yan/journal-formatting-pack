@@ -1,4 +1,0 @@
-interface:
-  display_name: "Taylor & Francis Formatting"
-  short_description: "Format manuscripts for Taylor & Francis"
-  default_prompt: "Use $taylor-francis-formatting to check my manuscript against Taylor & Francis requirements."

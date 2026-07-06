@@ -1,4 +1,0 @@
-interface:
-  display_name: "SAGE Formatting"
-  short_description: "Format manuscripts for SAGE journals"
-  default_prompt: "Use $sage-formatting to check my manuscript against SAGE requirements."

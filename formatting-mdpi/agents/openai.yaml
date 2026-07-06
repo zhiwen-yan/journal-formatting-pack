@@ -1,0 +1,4 @@
+interface:
+  display_name: "MDPI Formatting"
+  short_description: "Format manuscripts for MDPI journals"
+  default_prompt: "Use $formatting-mdpi to check my manuscript against MDPI requirements."

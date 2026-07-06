@@ -1,0 +1,4 @@
+interface:
+  display_name: "OUP Formatting"
+  short_description: "Format manuscripts for Oxford journals"
+  default_prompt: "Use $formatting-oup to check my manuscript against Oxford University Press requirements."
