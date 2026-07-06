@@ -3,12 +3,14 @@ from __future__ import annotations
 import argparse
 import json
 import os
+from copy import deepcopy
 from pathlib import Path
 from typing import Any
 
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.shared import Pt
+from docx.shared import Inches
 
 
 DECLARATION_ORDER = [
@@ -23,6 +25,16 @@ DECLARATION_ORDER = [
 ]
 
 NUMERIC_REFERENCE_STYLES = {"vancouver", "ama", "numeric", "numbered", "mdpi"}
+REPO_ROOT = Path(__file__).resolve().parents[2]
+RULE_INDEX = {
+    ("mdpi", "nutrients"): REPO_ROOT / "rules" / "mdpi" / "nutrients.json",
+    ("mdpi", "foods"): REPO_ROOT / "rules" / "mdpi" / "foods.json",
+    ("mdpi", "journal of clinical medicine"): REPO_ROOT / "rules" / "mdpi" / "jcm.json",
+    ("frontiers", "frontiers in nutrition"): REPO_ROOT / "rules" / "frontiers" / "frontiers-in-nutrition.json",
+    ("frontiers", "frontiers in pharmacology"): REPO_ROOT / "rules" / "frontiers" / "frontiers-in-pharmacology.json",
+    ("plos", "plos one"): REPO_ROOT / "rules" / "plos" / "plos-one.json",
+    ("elsevier", "generic elsevier"): REPO_ROOT / "rules" / "elsevier" / "generic-elsevier.json",
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -41,6 +53,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--journal", help="Journal name override.")
     parser.add_argument("--article-type", help="Article type override.")
     parser.add_argument(
+        "--rules",
+        help="Optional path to a rule profile JSON file under rules/. If omitted, the script will try to infer one from style and journal.",
+    )
+    parser.add_argument(
         "--zotero-mode",
         choices=["auto", "required", "disabled"],
         default="auto",
@@ -58,8 +74,33 @@ def load_payload(path: Path) -> dict[str, Any]:
         return json.load(handle)
 
 
-def article_sections(style: str, article_type: str) -> list[dict[str, Any]]:
+def load_rule_profile(path: Path | None) -> dict[str, Any]:
+    if path is None or not path.exists():
+        return {}
+    with path.open("r", encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def infer_rule_path(style: str, journal: str) -> Path | None:
+    key = (style.strip().lower(), journal.strip().lower())
+    if key in RULE_INDEX:
+        return RULE_INDEX[key]
+    slug = journal.strip().lower().replace("&", "and")
+    slug = "".join(ch if ch.isalnum() or ch == " " else " " for ch in slug)
+    slug = "-".join(part for part in slug.split() if part)
+    candidate = REPO_ROOT / "rules" / style.strip().lower() / f"{slug}.json"
+    return candidate if candidate.exists() else None
+
+
+def article_sections(style: str, article_type: str, rule_profile: dict[str, Any] | None = None) -> list[dict[str, Any]]:
     normalized = article_type.strip().lower()
+    rule_profile = rule_profile or {}
+    article_type_sections = rule_profile.get("article_type_sections") or {}
+    if normalized in article_type_sections:
+        return [
+            {"title": title, "paragraphs": [f"TODO: Draft the {title.lower()} section."]}
+            for title in article_type_sections[normalized]
+        ]
     if "review" in normalized and "systematic" in normalized:
         titles = [
             "Introduction",
@@ -127,18 +168,49 @@ def normalize_affiliations(payload: dict[str, Any]) -> list[dict[str, Any]]:
     return [{"id": 1, "text": "TODO: Author affiliation"}]
 
 
+def ensure_keyword_placeholders(keywords: list[str], target_count: int | None) -> list[str]:
+    items = [str(item) for item in keywords if str(item).strip()]
+    target = target_count or len(items) or 3
+    while len(items) < target:
+        items.append(f"TODO keyword {len(items) + 1}")
+    return items
+
+
+def apply_numbering(sections: list[dict[str, Any]], prefix: str = "") -> list[dict[str, Any]]:
+    numbered: list[dict[str, Any]] = []
+    for index, section in enumerate(sections, start=1):
+        current = f"{prefix}{index}" if not prefix else f"{prefix}.{index}"
+        item = deepcopy(section)
+        title = str(item.get("title") or "TODO: Section Title")
+        if not title.startswith(f"{current}. "):
+            item["title"] = f"{current}. {title}"
+        if item.get("subsections"):
+            item["subsections"] = apply_numbering(item["subsections"], current)
+        numbered.append(item)
+    return numbered
+
+
 def normalize_payload(
     payload: dict[str, Any],
     output_format: str,
     default_style: str | None = None,
     default_journal: str | None = None,
     default_article_type: str | None = None,
+    rule_profile: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
+    rule_profile = rule_profile or {}
     style = (payload.get("style") or default_style or "generic").strip().lower()
     article_type = payload.get("article_type") or default_article_type or "Original Research"
     journal = payload.get("journal") or default_journal or "TODO: Target Journal"
-    keywords = payload.get("keywords") or ["TODO keyword 1", "TODO keyword 2", "TODO keyword 3"]
-    sections = payload.get("sections") or article_sections(style, article_type)
+    formatting = rule_profile.get("formatting") or {}
+    keyword_rules = rule_profile.get("keyword_rules") or {}
+    keywords = ensure_keyword_placeholders(
+        payload.get("keywords") or ["TODO keyword 1", "TODO keyword 2", "TODO keyword 3"],
+        keyword_rules.get("target_count"),
+    )
+    sections = payload.get("sections") or article_sections(style, article_type, rule_profile)
+    if formatting.get("section_numbering") and output_format == "word":
+        sections = apply_numbering(sections)
     declarations = default_declarations()
     declarations.update(payload.get("declarations") or {})
     normalized = {
@@ -158,7 +230,10 @@ def normalize_payload(
         "sections": sections,
         "declarations": declarations,
         "notes": payload.get("notes") or [],
+        "rule_profile": rule_profile,
     }
+    if rule_profile.get("reference_style") and not payload.get("reference_style"):
+        normalized["reference_style"] = rule_profile["reference_style"]
     return normalized
 
 
@@ -279,9 +354,19 @@ def add_docx_sections(document: Document, sections: list[dict[str, Any]], level:
 
 def generate_docx(payload: dict[str, Any], output_path: Path, zotero: dict[str, Any]) -> None:
     document = Document()
+    formatting = payload.get("rule_profile", {}).get("formatting") or {}
+    margin_in = formatting.get("margin_in")
+    if margin_in:
+        for section in document.sections:
+            section.top_margin = Inches(margin_in)
+            section.bottom_margin = Inches(margin_in)
+            section.left_margin = Inches(margin_in)
+            section.right_margin = Inches(margin_in)
     normal = document.styles["Normal"]
-    normal.font.name = "Times New Roman"
-    normal.font.size = Pt(12)
+    normal.font.name = formatting.get("font_name") or "Times New Roman"
+    normal.font.size = Pt(formatting.get("font_size_pt") or 12)
+    if formatting.get("line_spacing"):
+        normal.paragraph_format.line_spacing = formatting["line_spacing"]
 
     add_docx_title_page(document, payload)
 
@@ -357,10 +442,15 @@ def biblatex_style(reference_style: str) -> str:
 
 
 def generate_latex(payload: dict[str, Any], output_path: Path, zotero: dict[str, Any]) -> None:
+    formatting = payload.get("rule_profile", {}).get("formatting") or {}
+    margin_in = formatting.get("margin_in") or 1
+    font_size = formatting.get("font_size_pt") or 12
+    line_spacing = formatting.get("line_spacing") or 1.5
     lines = [
-        "\\documentclass[12pt]{article}",
-        "\\usepackage[margin=1in]{geometry}",
+        f"\\documentclass[{font_size}pt]{{article}}",
+        f"\\usepackage[margin={margin_in}in]{{geometry}}",
         "\\usepackage[hidelinks]{hyperref}",
+        "\\usepackage{setspace}",
     ]
     if zotero["enabled"]:
         lines.extend(
@@ -373,6 +463,7 @@ def generate_latex(payload: dict[str, Any], output_path: Path, zotero: dict[str,
         [
             "",
             "\\begin{document}",
+            f"\\setstretch{{{line_spacing}}}",
             "\\begin{titlepage}",
             "\\centering",
             f"{{\\LARGE \\textbf{{{latex_escape(payload['title'])}}}\\\\[1em]}}",
@@ -426,12 +517,17 @@ def main(
 ) -> int:
     args = parse_args()
     payload = load_payload(Path(args.input))
+    style_hint = (payload.get("style") or args.style or default_style or "generic").strip().lower()
+    journal_hint = payload.get("journal") or args.journal or default_journal or "TODO: Target Journal"
+    rule_path = Path(args.rules).expanduser() if args.rules else infer_rule_path(style_hint, journal_hint)
+    rule_profile = load_rule_profile(rule_path)
     normalized = normalize_payload(
         payload,
         output_format=args.output_format,
         default_style=args.style or default_style,
         default_journal=args.journal or default_journal,
         default_article_type=args.article_type or default_article_type,
+        rule_profile=rule_profile,
     )
     output_path = resolve_output_path(args, normalized)
     zotero = resolve_zotero(args, payload)
@@ -440,6 +536,8 @@ def main(
     else:
         generate_latex(normalized, output_path, zotero)
     print(f"Generated {args.output_format} manuscript skeleton: {output_path}")
+    if rule_path and rule_path.exists():
+        print(f"Applied rule profile: {rule_path}")
     print(zotero["message"])
     return 0
 

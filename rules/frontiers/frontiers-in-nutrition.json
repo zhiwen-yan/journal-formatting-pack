@@ -1,0 +1,41 @@
+{
+  "journal": "Frontiers in Nutrition",
+  "publisher": "Frontiers",
+  "style": "frontiers",
+  "guideline_url": "https://www.frontiersin.org/journals/nutrition/for-authors/article-types",
+  "word_template_url": "https://www.frontiersin.org/Design/zip/Frontiers_Word_Templates.zip",
+  "latex_template_url": "https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip",
+  "last_checked": "2026-07-07",
+  "reference_style": "numeric",
+  "keyword_rules": {
+    "target_count": 5
+  },
+  "formatting": {
+    "font_name": "Times New Roman",
+    "font_size_pt": 12,
+    "line_spacing": 1.5,
+    "margin_in": 1.0,
+    "section_numbering": false
+  },
+  "required_statements": [
+    "Author Contributions",
+    "Funding",
+    "Ethics Statement",
+    "Data Availability Statement",
+    "Conflict of Interest"
+  ],
+  "article_type_sections": {
+    "original research": [
+      "Introduction",
+      "Materials and Methods",
+      "Results",
+      "Discussion"
+    ],
+    "review": [
+      "Introduction",
+      "Main Sections",
+      "Discussion",
+      "Conclusion"
+    ]
+  }
+}

@@ -13,6 +13,7 @@ The generator applies MDPI-friendly defaults for:
 - numbered IMRaD-style structure
 - declaration blocks
 - references placeholder
+- local MDPI rule profiles when the journal is known
 
 ## Example Commands
 

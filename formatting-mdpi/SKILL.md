@@ -7,11 +7,17 @@ description: MDPI journal formatting and submission-readiness assistant. Use whe
 
 ## Workflow
 
-1. Confirm the exact MDPI journal, article type, and whether the user has the official MDPI Word or LaTeX template.
+1. Confirm or infer the exact MDPI journal and article type. If the user uploaded a manuscript and did not provide a template, continue with the local rule profile and local skeleton defaults.
 2. Read the current journal instructions page or the user's provided template. Use `references/official-guidelines.md` as a source map and initial checklist.
 3. Check article-type-specific requirements before applying generic MDPI structure.
 4. Preserve scientific content and do not invent missing declaration or citation details.
 5. Return a checklist, revised structure, or submission sections as requested.
+
+## Minimal Prompt Mode
+
+Support prompts as short as `Please use formatting-mdpi to check and organize this manuscript.` together with an uploaded manuscript file or pasted text plus article type if available.
+
+Do not require the user to list every declaration item manually. Check the default MDPI declaration set automatically.
 
 ## File Outputs
 
@@ -43,18 +49,18 @@ If the user wants Zotero-aware references:
 
 ## Required Inputs
 
-Ask for:
+Ask for or infer:
 
 - Target MDPI journal.
 - Article type.
 - Manuscript file or text.
-- Official journal instructions URL or template.
+- Official journal instructions URL or template, only if the user already has one or wants stricter template matching.
 - Whether humans, animals, public data, AI tools, software/code, or supplementary materials are involved.
 - Desired output format.
 
 ## Common MDPI Checks
 
-Check:
+Check by default:
 
 - Title, authors, affiliations, and corresponding author block.
 - Abstract and keywords.

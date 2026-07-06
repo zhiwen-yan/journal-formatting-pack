@@ -1,0 +1,1032 @@
+[
+  {
+    "id": "mdpi-authors",
+    "publisher": "MDPI",
+    "label": "MDPI Authors",
+    "kind": "guidelines",
+    "url": "https://www.mdpi.com/authors",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:25.007472+00:00",
+    "status_code": 403,
+    "content_type": "text/html",
+    "final_url": "https://www.mdpi.com/authors",
+    "title": "Access Denied",
+    "fetch_status": "http_error",
+    "interesting_links": [],
+    "error": null,
+    "limitation": "needs manual follow-up"
+  },
+  {
+    "id": "mdpi-latex",
+    "publisher": "MDPI",
+    "label": "MDPI LaTeX Hub",
+    "kind": "template-entry",
+    "url": "https://www.mdpi.com/authors/latex",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:26.849787+00:00",
+    "status_code": 403,
+    "content_type": "text/html",
+    "final_url": "https://www.mdpi.com/authors/latex",
+    "title": "Access Denied",
+    "fetch_status": "http_error",
+    "interesting_links": [],
+    "error": null,
+    "limitation": "needs manual follow-up; download link may be embedded dynamically or require manual navigation"
+  },
+  {
+    "id": "mdpi-nutrients",
+    "publisher": "MDPI",
+    "label": "Nutrients Instructions",
+    "kind": "journal-instructions",
+    "url": "https://www.mdpi.com/journal/nutrients/instructions",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:27.733638+00:00",
+    "status_code": 403,
+    "content_type": "text/html",
+    "final_url": "https://www.mdpi.com/journal/nutrients/instructions",
+    "title": "Access Denied",
+    "fetch_status": "http_error",
+    "interesting_links": [],
+    "error": null,
+    "limitation": "needs manual follow-up"
+  },
+  {
+    "id": "mdpi-foods",
+    "publisher": "MDPI",
+    "label": "Foods Instructions",
+    "kind": "journal-instructions",
+    "url": "https://www.mdpi.com/journal/foods/instructions",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:28.659314+00:00",
+    "status_code": 403,
+    "content_type": "text/html",
+    "final_url": "https://www.mdpi.com/journal/foods/instructions",
+    "title": "Access Denied",
+    "fetch_status": "http_error",
+    "interesting_links": [],
+    "error": null,
+    "limitation": "needs manual follow-up"
+  },
+  {
+    "id": "mdpi-jcm",
+    "publisher": "MDPI",
+    "label": "JCM Instructions",
+    "kind": "journal-instructions",
+    "url": "https://www.mdpi.com/journal/jcm/instructions",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:29.580615+00:00",
+    "status_code": 403,
+    "content_type": "text/html",
+    "final_url": "https://www.mdpi.com/journal/jcm/instructions",
+    "title": "Access Denied",
+    "fetch_status": "http_error",
+    "interesting_links": [],
+    "error": null,
+    "limitation": "needs manual follow-up"
+  },
+  {
+    "id": "frontiers-author-guidelines",
+    "publisher": "Frontiers",
+    "label": "Author Guidelines",
+    "kind": "guidelines",
+    "url": "https://www.frontiersin.org/guidelines/author-guidelines",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:30.485519+00:00",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.frontiersin.org/guidelines/author-guidelines",
+    "title": "Frontiers | Author guidelines",
+    "fetch_status": "blocked",
+    "interesting_links": [
+      {
+        "text": "Submit your research",
+        "url": "https://www.frontiersin.org/submission/submit"
+      },
+      {
+        "text": "policies and publication ethics",
+        "url": "https://www.frontiersin.org/guidelines/policies-and-publication-ethics"
+      },
+      {
+        "text": "Word templates",
+        "url": "https://www.frontiersin.org/Design/zip/Frontiers_Word_Templates.zip"
+      },
+      {
+        "text": "LaTeX templates",
+        "url": "https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip"
+      },
+      {
+        "text": "See more services for authors",
+        "url": "https://www.frontiersin.org/for-authors/author-services"
+      },
+      {
+        "text": "Chicago Manual of Style",
+        "url": "https://www.chicagomanualofstyle.org/home.html"
+      },
+      {
+        "text": "Guidelines on Inclusive Language and Images in Scholarly Communication",
+        "url": "https://c4disc.pubpub.org/guidelines-on-inclusive-language-and-images-in-scholarly-communication"
+      },
+      {
+        "text": "help center",
+        "url": "https://helpcenter.frontiersin.org/s/article/What-reference-style-does-each-journal-use"
+      },
+      {
+        "text": "ChemDraw template",
+        "url": "https://www.frontiersin.org/files/zip/FrontChemTemplate.zip"
+      },
+      {
+        "text": "supplementary material templates",
+        "url": "https://www.frontiersin.org/design/zip/Frontiers_Supplementary_Material.zip"
+      },
+      {
+        "text": "Author guidelines",
+        "url": "https://www.frontiersin.org/guidelines/author-guidelines"
+      },
+      {
+        "text": "Writing and formatting",
+        "url": "https://www.frontiersin.org/guidelines/author-guidelines#writing-and-formatting"
+      }
+    ],
+    "error": null,
+    "limitation": "needs manual follow-up"
+  },
+  {
+    "id": "frontiers-nutrition-article-types",
+    "publisher": "Frontiers",
+    "label": "Frontiers in Nutrition Article Types",
+    "kind": "journal-instructions",
+    "url": "https://www.frontiersin.org/journals/nutrition/for-authors/article-types",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:32.572028+00:00",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.frontiersin.org/journals/nutrition/for-authors/article-types",
+    "title": "Frontiers in Nutrition | About",
+    "fetch_status": "fetched_html",
+    "interesting_links": [
+      {
+        "text": "Submit your research",
+        "url": "https://www.frontiersin.org/submission/submit?domainid=2&amp;fieldid=87&amp;specialtyid=0&amp;entitytype=2&amp;entityid=628"
+      },
+      {
+        "text": "Journal sections",
+        "url": "https://www.frontiersin.org/journals/nutrition/about#about-submission"
+      },
+      {
+        "text": "Why submit?",
+        "url": "https://www.frontiersin.org/journals/nutrition/for-authors/why-submit"
+      },
+      {
+        "text": "Article types",
+        "url": "https://www.frontiersin.org/journals/nutrition/for-authors/article-types"
+      },
+      {
+        "text": "Author guidelines",
+        "url": "https://www.frontiersin.org/journals/nutrition/for-authors/author-guidelines"
+      },
+      {
+        "text": "Editor guidelines",
+        "url": "https://www.frontiersin.org/journals/nutrition/for-authors/editor-guidelines"
+      },
+      {
+        "text": "Publishing fees",
+        "url": "https://www.frontiersin.org/journals/nutrition/for-authors/publishing-fees"
+      },
+      {
+        "text": "Submission checklist",
+        "url": "https://www.frontiersin.org/journals/nutrition/for-authors/submission-checklist"
+      },
+      {
+        "text": "Contact editorial office",
+        "url": "https://www.frontiersin.org/journals/nutrition/for-authors/contact-editorial-office"
+      },
+      {
+        "text": "Author guidelines",
+        "url": "https://www.frontiersin.org/guidelines/author-guidelines"
+      },
+      {
+        "text": "Submit your manuscript",
+        "url": "https://www.frontiersin.org/Submission/SubmissionInfo.aspx"
+      },
+      {
+        "text": "https://www.frontiersin.org/guidelines/policies-and-publication-ethics",
+        "url": "https://www.frontiersin.org/guidelines/policies-and-publication-ethics"
+      }
+    ],
+    "error": null,
+    "limitation": ""
+  },
+  {
+    "id": "frontiers-pharmacology-article-types",
+    "publisher": "Frontiers",
+    "label": "Frontiers in Pharmacology Article Types",
+    "kind": "journal-instructions",
+    "url": "https://www.frontiersin.org/journals/pharmacology/for-authors/article-types",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:34.072469+00:00",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.frontiersin.org/journals/pharmacology/for-authors/article-types",
+    "title": "Frontiers in Pharmacology | About",
+    "fetch_status": "fetched_html",
+    "interesting_links": [
+      {
+        "text": "Submit your research",
+        "url": "https://www.frontiersin.org/submission/submit?domainid=1&amp;fieldid=62&amp;specialtyid=0&amp;entitytype=2&amp;entityid=176"
+      },
+      {
+        "text": "Journal sections",
+        "url": "https://www.frontiersin.org/journals/pharmacology/about#about-submission"
+      },
+      {
+        "text": "Why submit?",
+        "url": "https://www.frontiersin.org/journals/pharmacology/for-authors/why-submit"
+      },
+      {
+        "text": "Article types",
+        "url": "https://www.frontiersin.org/journals/pharmacology/for-authors/article-types"
+      },
+      {
+        "text": "Author guidelines",
+        "url": "https://www.frontiersin.org/journals/pharmacology/for-authors/author-guidelines"
+      },
+      {
+        "text": "Editor guidelines",
+        "url": "https://www.frontiersin.org/journals/pharmacology/for-authors/editor-guidelines"
+      },
+      {
+        "text": "Publishing fees",
+        "url": "https://www.frontiersin.org/journals/pharmacology/for-authors/publishing-fees"
+      },
+      {
+        "text": "Submission checklist",
+        "url": "https://www.frontiersin.org/journals/pharmacology/for-authors/submission-checklist"
+      },
+      {
+        "text": "Contact editorial office",
+        "url": "https://www.frontiersin.org/journals/pharmacology/for-authors/contact-editorial-office"
+      },
+      {
+        "text": "Author guidelines",
+        "url": "https://www.frontiersin.org/guidelines/author-guidelines"
+      },
+      {
+        "text": "Submit your manuscript",
+        "url": "https://www.frontiersin.org/Submission/SubmissionInfo.aspx"
+      },
+      {
+        "text": "https://www.frontiersin.org/guidelines/policies-and-publication-ethics",
+        "url": "https://www.frontiersin.org/guidelines/policies-and-publication-ethics"
+      }
+    ],
+    "error": null,
+    "limitation": ""
+  },
+  {
+    "id": "elsevier-policies",
+    "publisher": "Elsevier",
+    "label": "Policies and Guidelines for Authors",
+    "kind": "guidelines",
+    "url": "https://www.elsevier.com/researcher/author/policies-and-guidelines",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:35.092498+00:00",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.elsevier.com/researcher/author/policies-and-guidelines",
+    "title": "Policies and guidelines for authors| Elsevier",
+    "fetch_status": "fetched_html",
+    "interesting_links": [
+      {
+        "text": "CRediT author statement",
+        "url": "https://www.elsevier.com/researcher/author/policies-and-guidelines/credit-author-statement"
+      },
+      {
+        "text": "Submission fees",
+        "url": "https://www.elsevier.com/researcher/author/policies-and-guidelines/submission-fees"
+      },
+      {
+        "text": "Information and resources on inclusion in publishing at Elsevier",
+        "url": "https://www.elsevier.com/researcher/author/policies-and-guidelines/inclusion"
+      },
+      {
+        "text": "How to format and submit your artwork",
+        "url": "https://www.elsevier.com/about/policies-and-standards/author/artwork-and-media-instructions"
+      },
+      {
+        "text": "guidelines and resources",
+        "url": "https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions"
+      },
+      {
+        "text": "an article type that reforms the traditional publication process by allowing authors to pre-register their experiments",
+        "url": "https://www.elsevier.com/researcher/author/policies-and-guidelines/registered-reports"
+      },
+      {
+        "text": "Simultaneous submission factsheet opens in new tab/window",
+        "url": "https://assets.ctfassets.net/o78em1y1w4i4/26oK3vzWsN664zC9AIb2t5/625ffb449178bf749e2b49d7b6e2bb8a/Simultaneous-Submission-factsheet-March-2019.pdf"
+      }
+    ],
+    "error": null,
+    "limitation": ""
+  },
+  {
+    "id": "elsevier-latex",
+    "publisher": "Elsevier",
+    "label": "LaTeX Instructions for Authors",
+    "kind": "template-entry",
+    "url": "https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:38.148311+00:00",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions",
+    "title": "LaTeX instructions for authors| Elsevier",
+    "fetch_status": "fetched_html",
+    "interesting_links": [
+      {
+        "text": "Author policies and guidelines",
+        "url": "https://www.elsevier.com/researcher/author/policies-and-guidelines"
+      },
+      {
+        "text": "Download the journal article template package opens in new tab/window",
+        "url": "https://assets.ctfassets.net/o78em1y1w4i4/4MpsJHO0MOJ2xZuwGTAbOZ/7bc64af36477c5d6cfce335a1f872363/elsarticle.zip"
+      },
+      {
+        "text": "here opens in new tab/window",
+        "url": "https://assets.ctfassets.net/o78em1y1w4i4/5uFmLZJTPDMAUjFnHRpjj8/6f19a979146eb93263763d87a894ab0d/els-cas-templates.zip"
+      },
+      {
+        "text": "Submitting LaTeX Files to Editorial Manager opens in new tab/window",
+        "url": "https://www.ariessys.com/wp-content/uploads/EM_PM_LaTeX_Guide.pdf"
+      },
+      {
+        "text": "Elsevier Support Center opens in new tab/window",
+        "url": "https://service.elsevier.com/app/answers/detail/a_id/36917/supporthub/publishing/kw/latex/"
+      },
+      {
+        "text": "ecrc-template.tex opens in new tab/window",
+        "url": "https://assets.ctfassets.net/o78em1y1w4i4/27zowmUKIvbiPUxbbnVFFK/4ca39b5f4d636af37e783f0625bd81f3/ecrc-template.tex"
+      }
+    ],
+    "error": null,
+    "limitation": ""
+  },
+  {
+    "id": "elsevier-your-paper-your-way",
+    "publisher": "Elsevier",
+    "label": "Guide for Authors - Your Paper Your Way",
+    "kind": "guidelines",
+    "url": "https://www.elsevier.com/subject/next/guide-for-authors",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:39.443831+00:00",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.elsevier.com/subject/next/guide-for-authors",
+    "title": "Guide for authors - Your Paper Your Way",
+    "fetch_status": "fetched_html",
+    "interesting_links": [
+      {
+        "text": "Multiple, redundant or concurrent publication",
+        "url": "https://www.elsevier.com/researcher/author/policies-and-guidelines"
+      },
+      {
+        "text": "Sex and Gender Equity in Research (SAGER) guidelines opens in new tab/window",
+        "url": "https://ease.org.uk/communities/gender-policy-committee/the-sager-guidelines"
+      },
+      {
+        "text": "More details and an example",
+        "url": "https://www.elsevier.com/researcher/author/policies-and-guidelines/credit-author-statement"
+      },
+      {
+        "text": "Guide to Publishing with Elsevier",
+        "url": "https://www.elsevier.com/publishing/publish-in-a-journal/submission-and-decision"
+      },
+      {
+        "text": "elsarticle.cls opens in new tab/window",
+        "url": "https://ctan.org/tex-archive/macros/latex/contrib/elsarticle"
+      },
+      {
+        "text": "LaTeX site",
+        "url": "https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions"
+      },
+      {
+        "text": "guide on electronic artwork",
+        "url": "https://www.elsevier.com/about/policies-and-standards/author/artwork-and-media-instructions"
+      }
+    ],
+    "error": null,
+    "limitation": ""
+  },
+  {
+    "id": "springer-template-support",
+    "publisher": "Springer Nature",
+    "label": "Templates and Style Files",
+    "kind": "template-entry",
+    "url": "https://support.springernature.com/en/support/solutions/articles/6000081241-templates-and-style-files-for-journal-article-preparation",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:41.575097+00:00",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://support.springernature.com/en/support/solutions/articles/6000081241-templates-and-style-files-for-journal-article-preparation",
+    "title": "Templates and style files for journal article preparation : Springer Nature Support",
+    "fetch_status": "fetched_html",
+    "interesting_links": [
+      {
+        "text": "English",
+        "url": "https://support.springernature.com/en/support/solutions/articles/6000081241-templates-and-style-files-for-journal-article-preparation"
+      },
+      {
+        "text": "Information about LaTeX",
+        "url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support"
+      },
+      {
+        "text": "Find the right journal for your manuscript",
+        "url": "https://support.springernature.com/en/support/solutions/articles/6000134500-find-the-right-journal-for-your-manuscript"
+      },
+      {
+        "text": "Submit a LaTeX manuscript to a Springer Nature journal using Overleaf",
+        "url": "https://support.springernature.com/en/support/solutions/articles/6000127538-submit-a-latex-manuscript-to-a-springer-nature-journal-using-overleaf"
+      },
+      {
+        "text": "Editorial policy guidelines for Nature authors",
+        "url": "https://support.springernature.com/en/support/solutions/articles/6000210963-editorial-policy-guidelines-for-nature-authors"
+      },
+      {
+        "text": "Writing a journal manuscript",
+        "url": "https://support.springernature.com/en/support/solutions/articles/6000234503-writing-a-journal-manuscript"
+      },
+      {
+        "text": "Cover letter for your manuscript",
+        "url": "https://support.springernature.com/en/support/solutions/articles/6000245673-cover-letter-for-your-manuscript"
+      },
+      {
+        "text": "LaTex template package for article/book submissions",
+        "url": "https://support.springernature.com/en/support/solutions/articles/6000250920-latex-template-package-for-article-book-submissions"
+      },
+      {
+        "text": "Finding out a journal's scope (manuscript suitability)",
+        "url": "https://support.springernature.com/en/support/solutions/articles/6000271430-finding-out-a-journal-s-scope-manuscript-suitability-"
+      },
+      {
+        "text": "Is there a word limit for Springer Nature journal articles?",
+        "url": "https://support.springernature.com/en/support/solutions/articles/6000271469-is-there-a-word-limit-for-springer-nature-journal-articles-"
+      }
+    ],
+    "error": null,
+    "limitation": ""
+  },
+  {
+    "id": "springer-latex-support",
+    "publisher": "Springer Nature",
+    "label": "LaTeX Author Support",
+    "kind": "template-entry",
+    "url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:42.660713+00:00",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
+    "title": "LaTeX author support | Publish your research | Springer Nature",
+    "fetch_status": "blocked",
+    "interesting_links": [
+      {
+        "text": "Writing your manuscript",
+        "url": "https://www.springernature.com/gp/authors/publish-a-book/writing-your-manuscript"
+      },
+      {
+        "text": "Submitting your manuscript",
+        "url": "https://www.springernature.com/gp/authors/publish-a-book/submitting-your-manuscript"
+      },
+      {
+        "text": "Manuscript guidelines",
+        "url": "https://www.springernature.com/gp/authors/publish-a-book/manuscript-guidelines"
+      },
+      {
+        "text": "Start page",
+        "url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support"
+      },
+      {
+        "text": "Journal authors ↓",
+        "url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support#c17590862"
+      },
+      {
+        "text": "Book authors ↓",
+        "url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support#c17590910"
+      },
+      {
+        "text": "FAQs ↓",
+        "url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support#c18782880"
+      },
+      {
+        "text": "Download the journal article template package (December 2024 version)",
+        "url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support/see-where-our-services-will-take-you/18782940"
+      },
+      {
+        "text": "access via Overleaf",
+        "url": "https://www.overleaf.com/latex/templates/springer-nature-latex-template/gsvvftmrppwq"
+      },
+      {
+        "text": "Download the journal article template package (December 2024 version)",
+        "url": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/18782940/data/v12"
+      },
+      {
+        "text": "Overleaf Errors page",
+        "url": "http://www.overleaf.com/learn/latex/Errors"
+      },
+      {
+        "text": "guidelines for book authors",
+        "url": "http://www.springernature.com/gp/authors/publish-a-book/manuscript-guidelines"
+      }
+    ],
+    "error": null,
+    "limitation": "needs manual follow-up"
+  },
+  {
+    "id": "springer-writing-manuscript",
+    "publisher": "Springer Nature",
+    "label": "Writing a Manuscript",
+    "kind": "guidelines",
+    "url": "https://www.springernature.com/gp/authors/campaigns/writing-a-manuscript",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:43.555819+00:00",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.springernature.com/gp/authors/campaigns/writing-a-manuscript",
+    "title": "Writing a manuscript | Publish your research | Springer Nature",
+    "fetch_status": "blocked",
+    "interesting_links": [
+      {
+        "text": "Writing your manuscript",
+        "url": "https://www.springernature.com/gp/authors/publish-a-book/writing-your-manuscript"
+      },
+      {
+        "text": "Submitting your manuscript",
+        "url": "https://www.springernature.com/gp/authors/publish-a-book/submitting-your-manuscript"
+      },
+      {
+        "text": "Manuscript guidelines",
+        "url": "https://www.springernature.com/gp/authors/publish-a-book/manuscript-guidelines"
+      },
+      {
+        "text": "Writing a Journal Manuscript Click here to begin the self-guided tutorial (registration required).&nbsp;",
+        "url": "https://resources.springernature.com/resources-springernature-com/writing-a-journal-manuscript/19964186"
+      }
+    ],
+    "error": null,
+    "limitation": "needs manual follow-up"
+  },
+  {
+    "id": "taf-formatting-templates",
+    "publisher": "Taylor & Francis",
+    "label": "Formatting and Templates",
+    "kind": "template-entry",
+    "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/formatting-and-templates/",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:43.994070+00:00",
+    "status_code": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/formatting-and-templates/",
+    "title": "Formatting and using a journal template | Writing your paper |",
+    "fetch_status": "fetched_html",
+    "interesting_links": [
+      {
+        "text": "Making your submission",
+        "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/"
+      },
+      {
+        "text": "Manuscript preparation",
+        "url": "https://authorservices.taylorandfrancis.com/researcher-services/preparing-your-article-for-submission/"
+      },
+      {
+        "text": "Manuscript formatting",
+        "url": "https://www.tandfeditingservices.com/services/manuscript-formatting.html"
+      },
+      {
+        "text": "Submission",
+        "url": "https://authorservices.taylorandfrancis.com/researcher-services/journal-submission-support/"
+      },
+      {
+        "text": "Pre-Submission Expert Review",
+        "url": "https://www.tandfeditingservices.com/services/pre-submission-expert-review.html"
+      },
+      {
+        "text": "Find out more about instructions for authors",
+        "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/get-familiar-with-the-instructions-for-authors/"
+      },
+      {
+        "text": "Instructions",
+        "url": "http://www.tandf.co.uk/journals/authors/template/TF_Template_Word_Windows_2016_instructions.pdf"
+      },
+      {
+        "text": "Template",
+        "url": "https://authstaging.wpengine.com/wp-content/uploads/2020/12/TF_Template_Word_Windows_2016.zip"
+      },
+      {
+        "text": "format-free submission",
+        "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/format-free-manuscript-submission/"
+      },
+      {
+        "text": "F1000Research Article Guidelines",
+        "url": "https://f1000research.com/for-authors/article-guidelines"
+      },
+      {
+        "text": "Journal manuscript layout guide",
+        "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/journal-manuscript-layout-guide/"
+      },
+      {
+        "text": "Your submission checklist",
+        "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/article-submission-checklist/"
+      }
+    ],
+    "error": null,
+    "limitation": ""
+  },
+  {
+    "id": "taf-layout-guide",
+    "publisher": "Taylor & Francis",
+    "label": "Journal Manuscript Layout Guide",
+    "kind": "guidelines",
+    "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/journal-manuscript-layout-guide/",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:45.103440+00:00",
+    "status_code": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/journal-manuscript-layout-guide/",
+    "title": "Taylor &amp; Francis manuscript layout guide | Author services",
+    "fetch_status": "fetched_html",
+    "interesting_links": [
+      {
+        "text": "Making your submission",
+        "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/"
+      },
+      {
+        "text": "Manuscript preparation",
+        "url": "https://authorservices.taylorandfrancis.com/researcher-services/preparing-your-article-for-submission/"
+      },
+      {
+        "text": "Manuscript formatting",
+        "url": "https://www.tandfeditingservices.com/services/manuscript-formatting.html"
+      },
+      {
+        "text": "Submission",
+        "url": "https://authorservices.taylorandfrancis.com/researcher-services/journal-submission-support/"
+      },
+      {
+        "text": "Pre-Submission Expert Review",
+        "url": "https://www.tandfeditingservices.com/services/pre-submission-expert-review.html"
+      },
+      {
+        "text": "downloadable templates",
+        "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/formatting-and-templates/"
+      },
+      {
+        "text": "how to start writing a journal manuscript",
+        "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/writing-a-journal-article/"
+      },
+      {
+        "text": "learn more on how to write an effective abstract and title.",
+        "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/using-keywords-to-write-title-and-abstract/"
+      },
+      {
+        "text": "guide to submission of electronic artwork",
+        "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/submit-electronic-artwork/"
+      },
+      {
+        "text": "format-free submission",
+        "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/format-free-manuscript-submission/"
+      }
+    ],
+    "error": null,
+    "limitation": ""
+  },
+  {
+    "id": "taf-instructions-for-authors",
+    "publisher": "Taylor & Francis",
+    "label": "Instructions for Authors Guide",
+    "kind": "guidelines",
+    "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/get-familiar-with-the-instructions-for-authors/",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:45.418779+00:00",
+    "status_code": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/get-familiar-with-the-instructions-for-authors/",
+    "title": "Get familiar with the instructions for authors",
+    "fetch_status": "fetched_html",
+    "interesting_links": [
+      {
+        "text": "Making your submission",
+        "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/"
+      },
+      {
+        "text": "Manuscript preparation",
+        "url": "https://authorservices.taylorandfrancis.com/researcher-services/preparing-your-article-for-submission/"
+      },
+      {
+        "text": "Manuscript formatting",
+        "url": "https://www.tandfeditingservices.com/services/manuscript-formatting.html"
+      },
+      {
+        "text": "Submission",
+        "url": "https://authorservices.taylorandfrancis.com/researcher-services/journal-submission-support/"
+      },
+      {
+        "text": "Pre-Submission Expert Review",
+        "url": "https://www.tandfeditingservices.com/services/pre-submission-expert-review.html"
+      },
+      {
+        "text": "View our checklist",
+        "url": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/article-submission-checklist/"
+      },
+      {
+        "text": "online submission system",
+        "url": "https://authorservices.taylorandfrancis.com/making-your-submission/"
+      }
+    ],
+    "error": null,
+    "limitation": ""
+  },
+  {
+    "id": "sage-sage-open",
+    "publisher": "SAGE",
+    "label": "Sage Open Submission Guidelines",
+    "kind": "journal-instructions",
+    "url": "https://journals.sagepub.com/author-instructions/sgo",
+    "notes": "SAGE template guidance is usually journal-level, not a single publisher-wide template page.",
+    "checked_at_utc": "2026-07-06T22:40:47.371316+00:00",
+    "status_code": 403,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://journals.sagepub.com/author-instructions/sgo",
+    "title": "Just a moment...",
+    "fetch_status": "http_error",
+    "interesting_links": [],
+    "error": null,
+    "limitation": "journal-specific requirements vary substantially; no single stable publisher-wide template library page was confirmed in this scan; needs manual follow-up; SAGE template guidance is usually journal-level, not a single publisher-wide template page."
+  },
+  {
+    "id": "sage-clinical-trials",
+    "publisher": "SAGE",
+    "label": "Clinical Trials Submission Guidelines",
+    "kind": "journal-instructions",
+    "url": "https://journals.sagepub.com/author-instructions/ctj",
+    "notes": "This page explicitly mentions Word and LaTeX templates.",
+    "checked_at_utc": "2026-07-06T22:40:48.303427+00:00",
+    "status_code": 403,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://journals.sagepub.com/author-instructions/ctj",
+    "title": "Just a moment...",
+    "fetch_status": "http_error",
+    "interesting_links": [],
+    "error": null,
+    "limitation": "journal-specific requirements vary substantially; no single stable publisher-wide template library page was confirmed in this scan; needs manual follow-up; This page explicitly mentions Word and LaTeX templates."
+  },
+  {
+    "id": "oup-general",
+    "publisher": "Oxford University Press",
+    "label": "Preparing and Submitting Your Manuscript",
+    "kind": "guidelines",
+    "url": "https://academic.oup.com/pages/for-authors/journals/preparing-and-submitting-your-manuscript",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:49.135079+00:00",
+    "status_code": 403,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://academic.oup.com/pages/for-authors/journals/preparing-and-submitting-your-manuscript",
+    "title": "Just a moment...",
+    "fetch_status": "http_error",
+    "interesting_links": [],
+    "error": null,
+    "limitation": "journal-specific requirements vary substantially; needs manual follow-up"
+  },
+  {
+    "id": "oup-bioinformatics",
+    "publisher": "Oxford University Press",
+    "label": "Bioinformatics Author Guidelines",
+    "kind": "journal-instructions",
+    "url": "https://academic.oup.com/bioinformatics/pages/author-guidelines",
+    "notes": "OUP requirements are strongly journal-specific.",
+    "checked_at_utc": "2026-07-06T22:40:49.994108+00:00",
+    "status_code": 403,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://academic.oup.com/bioinformatics/pages/author-guidelines",
+    "title": "Just a moment...",
+    "fetch_status": "http_error",
+    "interesting_links": [],
+    "error": null,
+    "limitation": "journal-specific requirements vary substantially; needs manual follow-up; OUP requirements are strongly journal-specific."
+  },
+  {
+    "id": "oup-brain",
+    "publisher": "Oxford University Press",
+    "label": "Brain General Instructions",
+    "kind": "journal-instructions",
+    "url": "https://academic.oup.com/brain/pages/general_instructions",
+    "notes": "OUP requirements are strongly journal-specific.",
+    "checked_at_utc": "2026-07-06T22:40:50.815526+00:00",
+    "status_code": 403,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://academic.oup.com/brain/pages/general_instructions",
+    "title": "Just a moment...",
+    "fetch_status": "http_error",
+    "interesting_links": [],
+    "error": null,
+    "limitation": "journal-specific requirements vary substantially; needs manual follow-up; OUP requirements are strongly journal-specific."
+  },
+  {
+    "id": "plos-one-guidelines",
+    "publisher": "PLOS",
+    "label": "PLOS ONE Submission Guidelines",
+    "kind": "journal-instructions",
+    "url": "https://journals.plos.org/plosone/s/submission-guidelines",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:51.685391+00:00",
+    "status_code": 200,
+    "content_type": "text/html;charset=UTF-8",
+    "final_url": "https://journals.plos.org/plosone/s/submission-guidelines",
+    "title": "PLOS One",
+    "fetch_status": "fetched_html",
+    "interesting_links": [
+      {
+        "text": "Submission Guidelines",
+        "url": "https://journals.plos.org/plosone/s/submission-guidelines"
+      },
+      {
+        "text": "LaTeX",
+        "url": "https://journals.plos.org/plosone/s/latex"
+      },
+      {
+        "text": "Revising Your Manuscript",
+        "url": "https://journals.plos.org/plosone/s/revising-your-manuscript"
+      },
+      {
+        "text": "Guidelines for Reviewers",
+        "url": "https://journals.plos.org/plosone/s/reviewer-guidelines"
+      },
+      {
+        "text": "Accepted Manuscripts",
+        "url": "https://journals.plos.org/plosone/s/accepted-manuscripts"
+      },
+      {
+        "text": "Submission system",
+        "url": "https://www.editorialmanager.com/pone"
+      },
+      {
+        "text": "Guidelines for revisions",
+        "url": "https://journals.plos.org/plosone/s/editorial-and-peer-review-process#loc-revisions"
+      },
+      {
+        "text": "APC Support",
+        "url": "https://journals.plos.org/plosone/s/submission-guidelines#loc-apc"
+      },
+      {
+        "text": "Read the supporting information guidelines",
+        "url": "https://journals.plos.org/plosone/s/supporting-information"
+      },
+      {
+        "text": "See reference formatting examples and additional instructions below.",
+        "url": "https://journals.plos.org/plosone/s/submission-guidelines#loc-references"
+      },
+      {
+        "text": "Download sample title, author list, and affiliations page (PDF)",
+        "url": "https://journals.plos.org/plosone/s/file?id=3fac/PLOS Affiliations Formatting Guidelines.pdf"
+      },
+      {
+        "text": "Download sample manuscript body (PDF)",
+        "url": "https://journals.plos.org/plosone/s/file?id=9cba/PLOS Manuscript Body Formatting Guidelines.pdf"
+      }
+    ],
+    "error": null,
+    "limitation": ""
+  },
+  {
+    "id": "plos-one-latex",
+    "publisher": "PLOS",
+    "label": "PLOS ONE LaTeX",
+    "kind": "template-entry",
+    "url": "https://journals.plos.org/plosone/s/latex",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:53.055177+00:00",
+    "status_code": 200,
+    "content_type": "text/html;charset=UTF-8",
+    "final_url": "https://journals.plos.org/plosone/s/latex",
+    "title": "PLOS One",
+    "fetch_status": "fetched_html",
+    "interesting_links": [
+      {
+        "text": "Submission Guidelines",
+        "url": "https://journals.plos.org/plosone/s/submission-guidelines"
+      },
+      {
+        "text": "LaTeX",
+        "url": "https://journals.plos.org/plosone/s/latex"
+      },
+      {
+        "text": "Revising Your Manuscript",
+        "url": "https://journals.plos.org/plosone/s/revising-your-manuscript"
+      },
+      {
+        "text": "Guidelines for Reviewers",
+        "url": "https://journals.plos.org/plosone/s/reviewer-guidelines"
+      },
+      {
+        "text": "Accepted Manuscripts",
+        "url": "https://journals.plos.org/plosone/s/accepted-manuscripts"
+      },
+      {
+        "text": "Download the template here",
+        "url": "https://journals.plos.org/plosone/s/file?id=1457/PLOS_latex_template.zip"
+      },
+      {
+        "text": "Overleaf",
+        "url": "https://www.overleaf.com/"
+      },
+      {
+        "text": "Download latexdiff",
+        "url": "https://www.ctan.org/pkg/latexdiff?lang=en"
+      }
+    ],
+    "error": null,
+    "limitation": ""
+  },
+  {
+    "id": "plos-one-getting-started",
+    "publisher": "PLOS",
+    "label": "PLOS ONE Getting Started",
+    "kind": "guidelines",
+    "url": "https://journals.plos.org/plosone/s/getting-started",
+    "notes": "",
+    "checked_at_utc": "2026-07-06T22:40:53.435044+00:00",
+    "status_code": 200,
+    "content_type": "text/html;charset=UTF-8",
+    "final_url": "https://journals.plos.org/plosone/s/getting-started",
+    "title": "PLOS One",
+    "fetch_status": "fetched_html",
+    "interesting_links": [
+      {
+        "text": "Submission Guidelines",
+        "url": "https://journals.plos.org/plosone/s/submission-guidelines"
+      },
+      {
+        "text": "LaTeX",
+        "url": "https://journals.plos.org/plosone/s/latex"
+      },
+      {
+        "text": "Revising Your Manuscript",
+        "url": "https://journals.plos.org/plosone/s/revising-your-manuscript"
+      },
+      {
+        "text": "Guidelines for Reviewers",
+        "url": "https://journals.plos.org/plosone/s/reviewer-guidelines"
+      },
+      {
+        "text": "Accepted Manuscripts",
+        "url": "https://journals.plos.org/plosone/s/accepted-manuscripts"
+      },
+      {
+        "text": "Download sample manuscript body (PDF)",
+        "url": "https://journals.plos.org/plosone/s/file?id=wjVg/PLOSOne_formatting_sample_main_body.pdf"
+      },
+      {
+        "text": "recommended reporting guidelines for different study types",
+        "url": "https://journals.plos.org/plosone/s/best-practices-in-research-reporting#loc-reporting-guidelines-for-specific-study-types"
+      },
+      {
+        "text": "online submission system",
+        "url": "https://www.editorialmanager.com/pone"
+      }
+    ],
+    "error": null,
+    "limitation": ""
+  },
+  {
+    "id": "wiley-small",
+    "publisher": "Wiley",
+    "label": "Small Author Guidelines",
+    "kind": "journal-instructions",
+    "url": "https://onlinelibrary.wiley.com/page/journal/16136829/homepage/author-guidelines",
+    "notes": "Wiley guidance is reliably available on journal-level author-guidelines pages.",
+    "checked_at_utc": "2026-07-06T22:40:53.820019+00:00",
+    "status_code": 403,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://onlinelibrary.wiley.com/page/journal/16136829/homepage/author-guidelines",
+    "title": "Just a moment...",
+    "fetch_status": "http_error",
+    "interesting_links": [],
+    "error": null,
+    "limitation": "journal-specific requirements vary substantially; no single stable publisher-wide template library page was confirmed in this scan; needs manual follow-up; Wiley guidance is reliably available on journal-level author-guidelines pages."
+  },
+  {
+    "id": "wiley-clinical-case-reports",
+    "publisher": "Wiley",
+    "label": "Clinical Case Reports Author Guidelines",
+    "kind": "journal-instructions",
+    "url": "https://onlinelibrary.wiley.com/page/journal/20500904/homepage/forauthors.html",
+    "notes": "Wiley guidance is reliably available on journal-level forauthors pages.",
+    "checked_at_utc": "2026-07-06T22:40:54.684909+00:00",
+    "status_code": 403,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://onlinelibrary.wiley.com/page/journal/20500904/homepage/forauthors.html",
+    "title": "Just a moment...",
+    "fetch_status": "http_error",
+    "interesting_links": [],
+    "error": null,
+    "limitation": "journal-specific requirements vary substantially; no single stable publisher-wide template library page was confirmed in this scan; needs manual follow-up; Wiley guidance is reliably available on journal-level forauthors pages."
+  }
+]

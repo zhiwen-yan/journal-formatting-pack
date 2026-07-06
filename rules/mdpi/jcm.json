@@ -1,0 +1,50 @@
+{
+  "journal": "Journal of Clinical Medicine",
+  "publisher": "MDPI",
+  "style": "mdpi",
+  "guideline_url": "https://www.mdpi.com/journal/jcm/instructions",
+  "word_template_url": "https://www.mdpi.com/files/word-templates/jcm-template.dot",
+  "latex_template_url": "https://www.mdpi.com/authors/latex",
+  "last_checked": "2026-07-07",
+  "reference_style": "MDPI",
+  "keyword_rules": {
+    "target_count": 3
+  },
+  "formatting": {
+    "font_name": "Times New Roman",
+    "font_size_pt": 12,
+    "line_spacing": 1.5,
+    "margin_in": 1.0,
+    "section_numbering": true
+  },
+  "required_statements": [
+    "Author Contributions",
+    "Funding",
+    "Institutional Review Board Statement",
+    "Informed Consent Statement",
+    "Data Availability Statement",
+    "Conflicts of Interest"
+  ],
+  "article_type_sections": {
+    "article": [
+      "Introduction",
+      "Materials and Methods",
+      "Results",
+      "Discussion",
+      "Conclusions"
+    ],
+    "original research": [
+      "Introduction",
+      "Materials and Methods",
+      "Results",
+      "Discussion",
+      "Conclusions"
+    ],
+    "review": [
+      "Introduction",
+      "Main Sections",
+      "Discussion",
+      "Conclusions"
+    ]
+  }
+}

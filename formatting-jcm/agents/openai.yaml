@@ -1,4 +1,4 @@
 interface:
   display_name: "JCM Formatting"
   short_description: "Shortcut for Journal of Clinical Medicine"
-  default_prompt: "Use $formatting-jcm to prepare my manuscript for Journal of Clinical Medicine."
+  default_prompt: "Please use $formatting-jcm to check and organize this manuscript. Article type: Original Research"

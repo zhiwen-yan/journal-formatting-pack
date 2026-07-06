@@ -18,6 +18,17 @@ Prefer the current Nutrients instructions page or the user's uploaded template o
 3. Apply the `formatting-mdpi` workflow and statement checks, but treat Nutrients-specific journal instructions as final when they differ from general MDPI patterns.
 4. Output a checklist, revised structure, declaration text, or submission package material as requested.
 
+## Minimal Prompt Mode
+
+This skill should work well with very short prompts such as `Please use formatting-nutrients to check and organize this manuscript.`
+
+The preferred user input is:
+
+- an uploaded manuscript file
+- article type
+
+The user does not need to list every declaration section manually.
+
 ## File Outputs
 
 When the user wants a `.docx` or `.tex` manuscript skeleton, use `scripts/generate_manuscript.py`.
@@ -31,17 +42,17 @@ If the user wants Zotero-aware references and no Zotero `.bib` source is configu
 
 ## Required Inputs
 
-Ask for:
+Ask for or infer:
 
 - Article type.
 - Manuscript file or text.
-- Nutrients instructions URL or template, if available.
+- Nutrients instructions URL or template, only if the user already has one or wants stricter template matching.
 - Whether humans, animals, public data, AI tools, or supplementary materials are involved.
 - Desired output.
 
 ## Checks
 
-Check:
+Check by default:
 
 - Abstract and keywords.
 - Main section structure for the selected article type.

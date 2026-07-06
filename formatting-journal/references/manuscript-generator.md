@@ -34,6 +34,8 @@ Pass a JSON file with fields like:
 
 See `references/example-manuscript.json` for a working example.
 
+The generator can also apply local rule profiles from `rules/` automatically when the style and journal are known, or explicitly through `--rules <path>`.
+
 ## Example Commands
 
 Generate a Word manuscript skeleton:
@@ -46,6 +48,12 @@ Generate a LaTeX manuscript skeleton:
 
 ```powershell
 & "<python>" "scripts/generate_manuscript.py" --input "references/example-manuscript.json" --output-format latex --output "output\manuscript.tex"
+```
+
+Generate a Word manuscript skeleton with a specific rule profile:
+
+```powershell
+& "<python>" "scripts/generate_manuscript.py" --input "references/example-manuscript.json" --output-format word --rules "..\rules\mdpi\nutrients.json" --output "output\nutrients-manuscript.docx"
 ```
 
 ## Zotero Handling

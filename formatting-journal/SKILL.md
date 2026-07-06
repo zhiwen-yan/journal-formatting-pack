@@ -11,6 +11,8 @@ Use this skill as the entry point for journal submission preparation. Identify t
 
 Prefer the user's current author guidelines URL, PDF, Word template, LaTeX template, or submission-system checklist over any bundled reference because journal requirements change.
 
+This skill should support minimal prompts. If the user uploads a manuscript file and only says something like `Please use formatting-journal to check and organize this manuscript.`, infer as much as possible from the file and ask only for the minimum missing information that changes routing or output.
+
 ## Required Inputs
 
 Before changing a manuscript, collect or infer:
@@ -18,13 +20,29 @@ Before changing a manuscript, collect or infer:
 1. Target journal name.
 2. Publisher, if known.
 3. Article type.
-4. Official author guidelines URL, PDF, or template.
-5. Manuscript file or text.
+4. Official author guidelines URL, PDF, or template, if already available.
+5. Manuscript file or text. Direct uploads are preferred when available.
 6. Reference style, if known.
 7. Research type: human participants, animal study, public database, clinical trial, software/code, qualitative research, systematic review, meta-analysis, or case report.
 8. Required output: checklist, revised manuscript, Word-ready structure, references, title page, declarations, cover letter, response letter, or full submission package.
 
 Ask concise follow-up questions only for missing information that changes the formatting decision. If the target journal is unknown, use `formatting-generic` and clearly mark journal-specific items as "confirm with target journal".
+
+## Minimal Prompt Mode
+
+When the user supplies only:
+
+- a manuscript file or pasted manuscript text
+- an article type
+
+you should still proceed.
+
+Default behavior in minimal mode:
+
+1. infer the manuscript structure from the uploaded content
+2. infer or ask for the target journal only if the current skill name does not already fix it
+3. check structure, references, and declaration sections by default
+4. return a missing-items list plus an organized manuscript skeleton when requested
 
 ## Routing
 
@@ -51,6 +69,17 @@ Read `references/publisher-routing.md` when publisher identity, aliases, or firs
 4. Preserve scientific meaning and all factual content.
 5. Use placeholders for missing author, ethics, funding, trial registration, repository, DOI, PMID, and reference metadata.
 6. Produce the requested output plus a submission-readiness checklist.
+
+When the user does not list specific checkpoints, treat these as default checks:
+
+- manuscript structure
+- references
+- Author Contributions
+- Funding
+- Institutional Review Board or ethics statement
+- Informed Consent Statement when relevant
+- Data Availability Statement
+- Conflicts of Interest
 
 ## Output File Generation
 

@@ -11,6 +11,8 @@ Use this skill when the target journal is clearly `Journal of Clinical Medicine`
 
 Prefer the current JCM instructions page or the user's uploaded template over any bundled notes.
 
+This skill should support minimal prompts plus a direct manuscript upload.
+
 ## Workflow
 
 1. Confirm the article type for JCM.
@@ -31,17 +33,17 @@ If the user wants Zotero-aware references and no Zotero `.bib` source is configu
 
 ## Required Inputs
 
-Ask for:
+Ask for or infer:
 
 - Article type.
 - Manuscript file or text.
-- JCM instructions URL or template, if available.
+- JCM instructions URL or template, only if already available or needed for stricter template matching.
 - Whether humans, animals, public data, AI tools, or supplementary materials are involved.
 - Desired output.
 
 ## Checks
 
-Check:
+Check by default:
 
 - Abstract and keywords.
 - Main section structure for the selected article type.

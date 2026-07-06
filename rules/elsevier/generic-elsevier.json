@@ -1,0 +1,40 @@
+{
+  "journal": "Generic Elsevier",
+  "publisher": "Elsevier",
+  "style": "elsevier",
+  "guideline_url": "https://www.elsevier.com/researcher/author/policies-and-guidelines",
+  "word_template_url": "",
+  "latex_template_url": "https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions",
+  "last_checked": "2026-07-07",
+  "reference_style": "numeric",
+  "keyword_rules": {
+    "target_count": 6
+  },
+  "formatting": {
+    "font_name": "Times New Roman",
+    "font_size_pt": 12,
+    "line_spacing": 1.5,
+    "margin_in": 1.0,
+    "section_numbering": false
+  },
+  "required_statements": [
+    "CRediT Author Statement",
+    "Funding",
+    "Declaration of Competing Interest",
+    "Data Availability"
+  ],
+  "article_type_sections": {
+    "research article": [
+      "Introduction",
+      "Methods",
+      "Results",
+      "Discussion",
+      "Conclusions"
+    ],
+    "review": [
+      "Introduction",
+      "Main Sections",
+      "Conclusions"
+    ]
+  }
+}

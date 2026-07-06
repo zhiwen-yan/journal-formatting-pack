@@ -1,0 +1,39 @@
+{
+  "journal": "PLOS ONE",
+  "publisher": "PLOS",
+  "style": "plos",
+  "guideline_url": "https://journals.plos.org/plosone/s/submission-guidelines",
+  "word_template_url": "",
+  "latex_template_url": "https://journals.plos.org/plosone/s/latex",
+  "last_checked": "2026-07-07",
+  "reference_style": "numeric",
+  "keyword_rules": {
+    "target_count": 5
+  },
+  "formatting": {
+    "font_name": "Times New Roman",
+    "font_size_pt": 12,
+    "line_spacing": 2.0,
+    "margin_in": 1.0,
+    "section_numbering": false
+  },
+  "required_statements": [
+    "Data Availability Statement",
+    "Funding",
+    "Competing Interests"
+  ],
+  "article_type_sections": {
+    "research article": [
+      "Introduction",
+      "Materials and Methods",
+      "Results",
+      "Discussion"
+    ],
+    "original research": [
+      "Introduction",
+      "Materials and Methods",
+      "Results",
+      "Discussion"
+    ]
+  }
+}

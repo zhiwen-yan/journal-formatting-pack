@@ -4,6 +4,8 @@ Codex skills for preparing academic manuscripts for journal submission.
 
 This repository packages a publisher-aware journal formatting workflow for academic writing. The main entry skill routes requests to publisher-specific skills, then checks structure, declarations, references, figures, tables, and submission readiness against current journal instructions.
 
+This project is unofficial and is not affiliated with or endorsed by any publisher or journal.
+
 ## Included Skills
 
 - `formatting-journal`: universal entry point and router.
@@ -25,20 +27,26 @@ This repository packages a publisher-aware journal formatting workflow for acade
 
 ```text
 journal-formatting-pack/
-├── formatting-journal/
-├── formatting-frontiers/
-├── formatting-mdpi/
-├── formatting-wiley/
-├── formatting-elsevier/
-├── formatting-springer-nature/
-├── formatting-taylor-francis/
-├── formatting-sage/
-├── formatting-oup/
-├── formatting-plos/
-├── formatting-generic/
-├── formatting-nutrients/
-├── formatting-foods/
-└── formatting-jcm/
+|- formatting-journal/
+|- formatting-frontiers/
+|- formatting-mdpi/
+|- formatting-wiley/
+|- formatting-elsevier/
+|- formatting-springer-nature/
+|- formatting-taylor-francis/
+|- formatting-sage/
+|- formatting-oup/
+|- formatting-plos/
+|- formatting-generic/
+|- formatting-nutrients/
+|- formatting-foods/
+|- formatting-jcm/
+|- rules/
+|- templates/
+|- research/
+|- PROJECT_PLAN.md
+|- USER_GUIDE.md
+`- PROMPTS.zh-CN.md
 ```
 
 Each skill contains:
@@ -46,6 +54,15 @@ Each skill contains:
 - `SKILL.md`: trigger description and operating instructions.
 - `agents/openai.yaml`: UI metadata for Codex skill chips.
 - `references/`: official source map and checklists to consult during execution.
+
+The repository also includes:
+
+- `research/official-source-scan/`: repeatable scans of official guideline pages, template-entry pages, and fetchability notes.
+- `rules/`: local machine-readable journal profiles maintained in the repository.
+- `templates/`: project-owned Word/LaTeX skeleton notes and reusable section snippets.
+- `PROJECT_PLAN.md`: product and maintenance plan.
+- `USER_GUIDE.md`: GitHub-facing user instructions.
+- `PROMPTS.zh-CN.md`: copyable Chinese prompt templates.
 
 ## Install
 
@@ -89,15 +106,24 @@ Or jump straight to a frequent journal shortcut:
 Use formatting-nutrients to prepare this manuscript for Nutrients.
 ```
 
+Minimal prompt pattern for direct uploads:
+
+```text
+Please use formatting-nutrients to check and organize this manuscript.
+Article type: Original Research
+```
+
+The user can then upload a `.docx`, `.tex`, `.md`, or `.txt` manuscript file.
+
 ## Expected Inputs
 
 These skills work best when the user provides:
 
-- target journal name
-- publisher, if known
+- target journal name, unless already implied by the skill name
 - article type
-- official author guidelines URL, PDF, Word template, or LaTeX template
 - manuscript file or manuscript text
+- publisher, if known
+- official author guidelines URL, PDF, Word template, or LaTeX template, only when available or when stricter matching is needed
 - reference style, if known
 - study design details such as human, animal, trial, review, or public-data status
 
@@ -137,6 +163,14 @@ Each generated file can include:
 - body structure
 - declaration sections
 - references placeholder
+
+The shared generator now supports local rule profiles under `rules/`. When style and journal are known, it can automatically apply journal defaults such as:
+
+- section ordering
+- keyword count placeholders
+- reference-style defaults
+- section numbering preferences
+- basic font, margin, and line-spacing defaults
 
 ## Zotero Support
 
