@@ -1,4 +1,4 @@
 interface:
-  display_name: "Nutrients Formatting"
+  display_name: "formatting-nutrients"
   short_description: "Shortcut for MDPI Nutrients submissions"
-  default_prompt: "Please use $formatting-nutrients to check and organize this manuscript. Article type: Original Research"
+  default_prompt: "Please use @formatting-nutrients to check and organize this manuscript. Article type: Original Research"

@@ -3,7 +3,7 @@ name: formatting-sage
 description: SAGE journal formatting and submission-readiness assistant. Use when the user asks to format, check, revise, polish, or prepare manuscripts for SAGE journals. Check the journal's Manuscript Submission Guidelines, article type, abstract, keywords, title page, blinded review requirements, main text, references, figures, tables, supplementary material, declarations, research ethics, consent, funding, conflicts of interest, data availability, reporting guidelines, and submission package.
 ---
 
-# SAGE Formatting
+# formatting-sage
 
 ## Workflow
 

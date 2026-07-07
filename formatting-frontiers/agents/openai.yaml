@@ -1,4 +1,4 @@
 interface:
-  display_name: "Frontiers Formatting"
+  display_name: "formatting-frontiers"
   short_description: "Format manuscripts for Frontiers journals"
-  default_prompt: "Use $formatting-frontiers to check my manuscript against Frontiers requirements."
+  default_prompt: "Use @formatting-frontiers to check my manuscript against Frontiers requirements."

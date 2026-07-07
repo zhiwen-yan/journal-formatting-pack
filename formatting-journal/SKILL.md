@@ -3,7 +3,7 @@ name: formatting-journal
 description: Universal academic journal formatting and submission-readiness router. Use when the user asks to format, check, revise, polish, package, or prepare a manuscript for journal submission, including SCI, SSCI, PubMed-indexed, medical, nursing, public health, nutrition, pharmacology, life science, clinical research, systematic review, meta-analysis, case report, review, protocol, or original research manuscripts. Route publisher-specific tasks to formatting-frontiers, formatting-mdpi, formatting-wiley, formatting-elsevier, formatting-springer-nature, formatting-taylor-francis, formatting-sage, formatting-oup, formatting-plos, or formatting-generic. Also use this skill when the user wants a generated Word manuscript skeleton or LaTeX manuscript skeleton.
 ---
 
-# Journal Formatting
+# formatting-journal
 
 ## Purpose
 

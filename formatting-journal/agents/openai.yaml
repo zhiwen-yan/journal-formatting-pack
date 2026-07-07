@@ -1,4 +1,4 @@
 interface:
-  display_name: "Journal Formatting"
+  display_name: "formatting-journal"
   short_description: "Route and prepare journal submissions"
-  default_prompt: "Please use $formatting-journal to check and organize this manuscript. Target journal: Frontiers in Nutrition. Article type: Review"
+  default_prompt: "Please use @formatting-journal to check and organize this manuscript. Target journal: Frontiers in Nutrition. Article type: Review"

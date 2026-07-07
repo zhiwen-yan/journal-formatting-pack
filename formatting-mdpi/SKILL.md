@@ -3,7 +3,7 @@ name: formatting-mdpi
 description: MDPI journal formatting and submission-readiness assistant. Use when the user asks to format, check, revise, polish, or prepare manuscripts for MDPI journals such as Nutrients, Foods, IJERPH, Biomedicines, Healthcare, Journal of Clinical Medicine, Cancers, Molecules, or other MDPI titles. Check MDPI manuscript structure, section numbering, abstract, keywords, references, figures, tables, supplementary material, author contributions, funding, institutional review board statement, informed consent statement, data availability statement, acknowledgments, conflicts of interest, AI-use disclosure, and submission checklist. Also use this skill when the user wants a generated MDPI-style Word manuscript skeleton or LaTeX manuscript skeleton.
 ---
 
-# MDPI Formatting
+# formatting-mdpi
 
 ## Workflow
 

@@ -3,7 +3,7 @@ name: formatting-elsevier
 description: Elsevier and ScienceDirect journal formatting and submission-readiness assistant. Use when the user asks to format, check, revise, polish, or prepare manuscripts for Elsevier journals. Check the journal's Guide for Authors, article type, title page, highlights, graphical abstract, abstract, keywords, main text, references, figures, tables, supplementary material, declaration of interest, author contributions, funding, ethics, consent, data availability, AI-assisted writing disclosure, and submission checklist.
 ---
 
-# Elsevier Formatting
+# formatting-elsevier
 
 ## Workflow
 

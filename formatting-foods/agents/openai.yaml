@@ -1,4 +1,4 @@
 interface:
-  display_name: "Foods Formatting"
+  display_name: "formatting-foods"
   short_description: "Shortcut for MDPI Foods submissions"
-  default_prompt: "Please use $formatting-foods to check and organize this manuscript. Article type: Original Research"
+  default_prompt: "Please use @formatting-foods to check and organize this manuscript. Article type: Original Research"

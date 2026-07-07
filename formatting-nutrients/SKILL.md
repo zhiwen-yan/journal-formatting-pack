@@ -3,7 +3,7 @@ name: formatting-nutrients
 description: Shortcut formatting skill for MDPI Nutrients submissions. Use when the user explicitly wants Nutrients formatting, asks to prepare a manuscript for Nutrients, or wants a fast MDPI journal-specific entry point instead of the broader formatting-mdpi skill. Check manuscript structure, references, author contributions, funding, institutional review board statement, informed consent statement, data availability statement, conflicts of interest, and Nutrients-specific submission readiness. Also use this skill when the user wants a generated Word or LaTeX manuscript skeleton targeted to Nutrients.
 ---
 
-# Nutrients Formatting
+# formatting-nutrients
 
 ## Purpose
 

@@ -3,7 +3,7 @@ name: formatting-jcm
 description: Shortcut formatting skill for MDPI Journal of Clinical Medicine submissions. Use when the user explicitly wants Journal of Clinical Medicine formatting, asks to prepare a manuscript for JCM, or wants a fast MDPI journal-specific entry point instead of the broader formatting-mdpi skill. Check manuscript structure, references, author contributions, funding, institutional review board statement, informed consent statement, data availability statement, conflicts of interest, and JCM-specific submission readiness. Also use this skill when the user wants a generated Word or LaTeX manuscript skeleton targeted to Journal of Clinical Medicine.
 ---
 
-# JCM Formatting
+# formatting-jcm
 
 ## Purpose
 

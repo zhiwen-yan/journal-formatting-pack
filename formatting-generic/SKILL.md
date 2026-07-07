@@ -3,7 +3,7 @@ name: formatting-generic
 description: General SCI, SSCI, PubMed-indexed, medical, nursing, public health, nutrition, pharmacology, life science, and clinical journal formatting assistant. Use when the user asks for journal submission formatting but has not provided a target journal or publisher, or when no publisher-specific skill applies. Check universal manuscript structure, title page, abstract, keywords, IMRaD sections, references, figures, tables, declarations, ethics, consent, data availability, funding, conflicts of interest, AI-use disclosure, reporting guidelines, and submission readiness.
 ---
 
-# Generic Journal Formatting
+# formatting-generic
 
 ## Purpose
 

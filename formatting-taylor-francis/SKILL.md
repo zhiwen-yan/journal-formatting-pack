@@ -3,7 +3,7 @@ name: formatting-taylor-francis
 description: Taylor & Francis and Routledge journal formatting and submission-readiness assistant. Use when the user asks to format, check, revise, polish, or prepare manuscripts for Taylor & Francis journals. Check the journal's Instructions for Authors, article type, title page, abstract, keywords, main text, references, figures, tables, supplementary material, disclosure statement, data availability, funding, ethics, consent, reporting guidelines, and submission package.
 ---
 
-# Taylor & Francis Formatting
+# formatting-taylor-francis
 
 ## Workflow
 

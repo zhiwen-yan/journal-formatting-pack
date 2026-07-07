@@ -3,7 +3,7 @@ name: formatting-plos
 description: PLOS journal formatting and submission-readiness assistant. Use when the user asks to format, check, revise, polish, or prepare manuscripts for PLOS journals such as PLOS ONE, PLOS Biology, PLOS Medicine, PLOS Genetics, PLOS Pathogens, PLOS Computational Biology, PLOS Neglected Tropical Diseases, PLOS Global Public Health, or other PLOS titles. Check submission guidelines, article type, title, abstract, author summary when required, main text, references, figures, tables, supporting information, data availability, funding, competing interests, ethics, consent, reporting guidelines, and submission package.
 ---
 
-# PLOS Formatting
+# formatting-plos
 
 ## Workflow
 

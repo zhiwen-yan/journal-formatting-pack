@@ -1,4 +1,4 @@
 interface:
-  display_name: "MDPI Formatting"
+  display_name: "formatting-mdpi"
   short_description: "Format manuscripts for MDPI journals"
-  default_prompt: "Please use $formatting-mdpi to check and organize this manuscript. Target journal: Nutrients. Article type: Original Research"
+  default_prompt: "Please use @formatting-mdpi to check and organize this manuscript. Target journal: Nutrients. Article type: Original Research"

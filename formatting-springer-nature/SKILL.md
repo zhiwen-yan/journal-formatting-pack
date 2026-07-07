@@ -3,7 +3,7 @@ name: formatting-springer-nature
 description: Springer Nature, BMC, and Nature Portfolio formatting and submission-readiness assistant. Use when the user asks to format, check, revise, polish, or prepare manuscripts for Springer, Springer Nature, BMC, Nature Portfolio, Scientific Reports, or BioMed Central journals. Check journal-specific submission guidelines, article type, title page, abstract, keywords, main text, references, figures, tables, supplementary information, ethics, consent, competing interests, funding, author contributions, data availability, AI-use disclosure, reporting guidelines, and submission package.
 ---
 
-# Springer Nature Formatting
+# formatting-springer-nature
 
 ## Workflow
 

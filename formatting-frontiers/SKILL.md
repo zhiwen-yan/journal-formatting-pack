@@ -3,7 +3,7 @@ name: formatting-frontiers
 description: Frontiers journal formatting and submission-readiness assistant. Use when the user asks to format, check, revise, polish, or prepare manuscripts for Frontiers journals such as Frontiers in Pharmacology, Frontiers in Nutrition, Frontiers in Public Health, Frontiers in Medicine, Frontiers in Endocrinology, Frontiers in Immunology, or other Frontiers titles. Check article type, abstract, keywords, manuscript structure, references, figures, tables, supplementary material, ethics, consent, data availability, author contributions, funding, conflicts of interest, AI-use disclosure, and submission checklist.
 ---
 
-# Frontiers Formatting
+# formatting-frontiers
 
 ## Workflow
 

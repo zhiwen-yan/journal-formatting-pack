@@ -1,4 +1,4 @@
 interface:
-  display_name: "PLOS Formatting"
+  display_name: "formatting-plos"
   short_description: "Format manuscripts for PLOS journals"
-  default_prompt: "Use $formatting-plos to check my manuscript against PLOS requirements."
+  default_prompt: "Use @formatting-plos to check my manuscript against PLOS requirements."

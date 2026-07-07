@@ -3,7 +3,7 @@ name: formatting-oup
 description: Oxford University Press and Oxford Academic journal formatting and submission-readiness assistant. Use when the user asks to format, check, revise, polish, or prepare manuscripts for OUP journals. Check the journal's Instructions to Authors, article type, title page, abstract, keywords, main text, references, figures, tables, supplementary material, ethics, consent, data availability, funding, conflicts of interest, author contributions, reporting guidelines, and submission package.
 ---
 
-# OUP Formatting
+# formatting-oup
 
 ## Workflow
 
