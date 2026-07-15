@@ -40,6 +40,7 @@ TARGETS: List[Target] = [
     Target("mdpi-nutrients", "MDPI", "Nutrients Instructions", "journal-instructions", "https://www.mdpi.com/journal/nutrients/instructions"),
     Target("mdpi-foods", "MDPI", "Foods Instructions", "journal-instructions", "https://www.mdpi.com/journal/foods/instructions"),
     Target("mdpi-jcm", "MDPI", "JCM Instructions", "journal-instructions", "https://www.mdpi.com/journal/jcm/instructions"),
+    Target("mdpi-metabolites", "MDPI", "Metabolites Instructions", "journal-instructions", "https://www.mdpi.com/journal/metabolites/instructions"),
     Target("frontiers-author-guidelines", "Frontiers", "Author Guidelines", "guidelines", "https://www.frontiersin.org/guidelines/author-guidelines"),
     Target("frontiers-nutrition-article-types", "Frontiers", "Frontiers in Nutrition Article Types", "journal-instructions", "https://www.frontiersin.org/journals/nutrition/for-authors/article-types"),
     Target("frontiers-pharmacology-article-types", "Frontiers", "Frontiers in Pharmacology Article Types", "journal-instructions", "https://www.frontiersin.org/journals/pharmacology/for-authors/article-types"),

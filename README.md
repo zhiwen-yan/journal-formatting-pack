@@ -22,6 +22,7 @@ This project is unofficial and is not affiliated with or endorsed by any publish
 - `formatting-nutrients`: direct shortcut for MDPI Nutrients.
 - `formatting-foods`: direct shortcut for MDPI Foods.
 - `formatting-jcm`: direct shortcut for MDPI Journal of Clinical Medicine.
+- `formatting-metabolites`: direct shortcut for MDPI Metabolites, including official-template DOCX migration checks.
 
 ## Repository Layout
 
@@ -41,9 +42,12 @@ journal-formatting-pack/
 |- formatting-nutrients/
 |- formatting-foods/
 |- formatting-jcm/
+|- formatting-metabolites/
 |- rules/
 |- templates/
 |- research/
+|- tests/
+|- requirements.txt
 |- PROJECT_PLAN.md
 |- USER_GUIDE.md
 `- PROMPTS.zh-CN.md
@@ -86,6 +90,12 @@ You can verify the install with:
 Get-ChildItem "$HOME\.agents\skills" -Recurse -Filter "SKILL.md" | Select-Object FullName
 ```
 
+Install the local script dependencies before using the generators, DOCX QA, or source scanner:
+
+```powershell
+python -m pip install -r ".\requirements.txt"
+```
+
 ## How To Use
 
 Call the universal router when you want the skill to choose the publisher path:
@@ -104,6 +114,12 @@ Or jump straight to a frequent journal shortcut:
 
 ```text
 Use formatting-nutrients to prepare this manuscript for Nutrients.
+```
+
+For Metabolites and an existing Word manuscript:
+
+```text
+Use formatting-metabolites to migrate this DOCX into the current official Metabolites template, preserve scientific content, and report author queries.
 ```
 
 Minimal prompt pattern for direct uploads:
@@ -139,6 +155,8 @@ These skills work best when the user provides:
 - reference-style cleanup
 - `.docx` manuscript skeleton generation
 - `.tex` manuscript skeleton generation
+- official-template migration workflow for an existing `.docx`
+- package/object QA, author-query log, change log, and template provenance
 
 ## Generator Support
 
@@ -149,11 +167,22 @@ The pack includes executable manuscript generators in:
 - `formatting-nutrients/scripts/generate_manuscript.py`
 - `formatting-foods/scripts/generate_manuscript.py`
 - `formatting-jcm/scripts/generate_manuscript.py`
+- `formatting-metabolites/scripts/generate_manuscript.py`
 
 These generators can create:
 
 - Word manuscript skeletons
 - LaTeX manuscript skeletons
+
+Generators create unofficial structural drafts. They do not reformat an existing DOCX or apply an official publisher template. Existing manuscripts must use the journal template-migration workflow and render-based QA.
+
+Audit an existing Metabolites DOCX without modifying it:
+
+```powershell
+python ".\formatting-mdpi\scripts\qa_docx.py" --input ".\manuscript.docx" --rules ".\rules\mdpi\metabolites.json" --article-type "Article" --json-output ".\metabolites-audit.json"
+```
+
+For a format-only migration, add `--source ".\original.docx"` so the audit compares text, drawings, tables, fields, notes, headers/footers, embedded media, and other package parts.
 
 Each generated file can include:
 

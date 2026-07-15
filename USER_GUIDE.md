@@ -9,6 +9,7 @@ This skill pack helps users:
 - generate Word manuscript skeletons
 - generate LaTeX manuscript skeletons
 - prepare a cleaner submission draft with placeholders for missing items
+- migrate an existing DOCX into a verified official template when the journal-specific skill supports it
 
 ## What Users Need To Provide
 
@@ -65,7 +66,14 @@ Target journal: Journal of Clinical Medicine
 Article type: Article
 ```
 
-The user should upload the official template file themselves when using this mode.
+The skill should first resolve the official template from the current journal instructions. If automated access is blocked, the user should upload the template.
+
+### 5. Metabolites existing-DOCX mode
+
+```text
+Please use formatting-metabolites to migrate this manuscript into the current official Metabolites Article template.
+Keep the work format-only, preserve figures/tables/equations/citation fields, and list every missing fact as an author query.
+```
 
 ## Default Checks
 
@@ -89,9 +97,11 @@ Depending on the request, the skill can return:
 - draft declaration blocks
 - Word manuscript skeleton
 - LaTeX manuscript skeleton
+- formatted DOCX plus formatting audit, author queries, change log, and template provenance
 
 ## Notes On Templates
 
-- users do not need an official template for the default workflow
-- if no official template is provided, the generator uses local rule profiles and local skeleton defaults
-- if the user provides an official template, the result can be made closer to that specific journal template
+- users do not need an official template for an audit or structural draft
+- strict template output requires the current official journal- and article-type-specific template
+- local rule profiles and generators create structural drafts; they do not prove template matching
+- every transformed DOCX should be reopened, structurally audited, rendered, and inspected page by page

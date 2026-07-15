@@ -1,0 +1,310 @@
+{
+  "journal": "Metabolites",
+  "aliases": [
+    "metabolites",
+    "MDPI Metabolites"
+  ],
+  "publisher": "MDPI",
+  "style": "mdpi",
+  "default_article_type": "Article",
+  "guideline_url": "https://www.mdpi.com/journal/metabolites/instructions",
+  "layout_guide_url": "https://www.mdpi.com/authors/layout",
+  "reference_guide_url": "https://www.mdpi.com/authors/references",
+  "word_template_url": "https://mdpi-res.com/files/word-templates/metabolites-template.dot",
+  "latex_template_url": "https://www.mdpi.com/authors/latex",
+  "last_checked": "2026-07-15",
+  "source_provenance": {
+    "authority": "official",
+    "journal_instructions_checked": "2026-07-15",
+    "template_checked": "2026-07-15",
+    "volatile": true,
+    "note": "Resolve template links from the live instructions page and record the final URL and SHA-256 for every formatting run."
+  },
+  "template_variants": {
+    "article": {
+      "word_template_url": "https://mdpi-res.com/files/word-templates/metabolites-template.dot",
+      "article_types": [
+        "Article",
+        "Original Research",
+        "Review",
+        "Systematic Review"
+      ]
+    },
+    "protocol": {
+      "word_template_url": "https://res.mdpi.com/data/metabolites-template-v2-20260622.dot",
+      "article_types": [
+        "Protocol"
+      ]
+    },
+    "data-descriptor": {
+      "word_template_url": "https://res.mdpi.com/data/metabolites-template-v3-20260622.dot",
+      "article_types": [
+        "Data Descriptor"
+      ]
+    }
+  },
+  "template_policy": {
+    "strict_mode_requires_official_template": true,
+    "dot_requires_conversion_before_python_docx": true,
+    "fallback_label": "unofficial structural draft",
+    "template_styles_win_over_local_defaults": true
+  },
+  "generator_policy": {
+    "supported_article_types": [
+      "Article",
+      "Original Research",
+      "Review",
+      "Systematic Review"
+    ],
+    "unsupported_action": "Use the current article-type-specific official template and the DOCX migration workflow instead; do not substitute a generic IMRaD skeleton."
+  },
+  "reference_style": "MDPI ACS numeric",
+  "citation_mode": "numeric",
+  "abstract_rules": {
+    "structured": true,
+    "applies_to": [
+      "Article",
+      "Original Research",
+      "Systematic Review"
+    ],
+    "labels": [
+      "Background/Objectives",
+      "Methods",
+      "Results",
+      "Conclusions"
+    ],
+    "target_words": 250,
+    "word_count_enforcement": "warning",
+    "single_paragraph": true
+  },
+  "keyword_rules": {
+    "min_count": 3,
+    "max_count": 10,
+    "separator": "; "
+  },
+  "formatting": {
+    "template_managed": true,
+    "fallback_scope": "structural draft only",
+    "font_name": "Palatino Linotype",
+    "font_size_pt": 10,
+    "line_spacing": 1.0,
+    "body_style_names": [
+      "MDPI_3.1_text",
+      "MDPI_3.2_text_no_indent"
+    ],
+    "title_font_size_pt": 18,
+    "page_width_in": 8.2677,
+    "page_height_in": 11.6929,
+    "top_margin_in": 0.9843,
+    "bottom_margin_in": 0.6299,
+    "left_margin_in": 0.5,
+    "right_margin_in": 0.5,
+    "section_numbering": true,
+    "continuous_line_numbering": true,
+    "line_number_distance_twips": 255,
+    "title_page_break": false,
+    "front_matter_as_heading": false,
+    "inline_keywords": true,
+    "declarations_heading": false
+  },
+  "front_matter_rules": {
+    "full_author_names": true,
+    "complete_affiliation_address": true,
+    "corresponding_marker": "*",
+    "equal_contribution_marker": "†",
+    "equal_contribution_note": "These authors contributed equally to this work.",
+    "multiple_corresponding_authors_allowed": true
+  },
+  "declaration_order": [
+    {
+      "key": "supplementary_materials",
+      "label": "Supplementary Materials"
+    },
+    {
+      "key": "author_contributions",
+      "label": "Author Contributions"
+    },
+    {
+      "key": "funding",
+      "label": "Funding"
+    },
+    {
+      "key": "institutional_review_board_statement",
+      "label": "Institutional Review Board Statement"
+    },
+    {
+      "key": "informed_consent_statement",
+      "label": "Informed Consent Statement"
+    },
+    {
+      "key": "data_availability_statement",
+      "label": "Data Availability Statement"
+    },
+    {
+      "key": "acknowledgments",
+      "label": "Acknowledgments"
+    },
+    {
+      "key": "conflicts_of_interest",
+      "label": "Conflicts of Interest"
+    }
+  ],
+  "back_matter_rules": [
+    {
+      "key": "supplementary_materials",
+      "required_when": "supplementary files exist"
+    },
+    {
+      "key": "author_contributions",
+      "required_when": "multiple authors",
+      "taxonomy": "CRediT"
+    },
+    {
+      "key": "funding",
+      "required": true,
+      "include_sponsor_role_when_industry_funded": true
+    },
+    {
+      "key": "institutional_review_board_statement",
+      "required_when": "human or animal research",
+      "required_facts": [
+        "committee name",
+        "protocol code",
+        "approval date"
+      ]
+    },
+    {
+      "key": "informed_consent_statement",
+      "required_when": "human participants",
+      "allow_reasoned_waiver": true
+    },
+    {
+      "key": "data_availability_statement",
+      "required": true
+    },
+    {
+      "key": "acknowledgments",
+      "required": false
+    },
+    {
+      "key": "conflicts_of_interest",
+      "required": true,
+      "no_conflict_wording": "The authors declare no conflict of interest."
+    }
+  ],
+  "method_disclosures": {
+    "generative_ai": {
+      "required_when": "AI generated or altered research text, data, figures, study design, or analysis",
+      "not_required_when": "AI was limited to spelling, grammar, punctuation, or formatting"
+    }
+  },
+  "article_type_sections": {
+    "article": [
+      "Introduction",
+      "Materials and Methods",
+      "Results",
+      "Discussion",
+      {
+        "title": "Conclusions",
+        "optional": true
+      }
+    ],
+    "original research": [
+      "Introduction",
+      "Materials and Methods",
+      "Results",
+      "Discussion",
+      {
+        "title": "Conclusions",
+        "optional": true
+      }
+    ],
+    "systematic review": [
+      "Introduction",
+      "Materials and Methods",
+      "Results",
+      "Discussion",
+      {
+        "title": "Conclusions",
+        "optional": true
+      }
+    ],
+    "review": [
+      "Introduction",
+      {
+        "title": "Main Sections",
+        "optional": true
+      },
+      {
+        "title": "Discussion",
+        "optional": true
+      },
+      {
+        "title": "Conclusions",
+        "optional": true
+      }
+    ]
+  },
+  "optional_submission_elements": {
+    "highlights": {
+      "sections": [
+        "Main findings",
+        "Implications"
+      ],
+      "max_bullets_per_section": 2
+    },
+    "graphical_abstract": true
+  },
+  "figure_rules": {
+    "preferred_min_dpi": 600,
+    "dpi_enforcement": "warning",
+    "allowed_raster_formats": [
+      "PNG",
+      "JPEG",
+      "TIFF"
+    ],
+    "caption_position": "below",
+    "place_near_first_citation": true,
+    "combine_multi_panel_figures": true,
+    "require_symbol_explanations": true,
+    "preserve_aspect_ratio": true,
+    "do_not_upscale": true
+  },
+  "table_rules": {
+    "caption_position": "above",
+    "editable_word_table_required": true,
+    "minimum_font_size_pt": 8,
+    "repeat_header_rows": true,
+    "fit_printable_width": true,
+    "require_symbol_explanations": true
+  },
+  "citation_rules": {
+    "number_by_first_appearance": true,
+    "bracket_style": "square",
+    "position": "before punctuation",
+    "examples": [
+      "[1]",
+      "[1–3]",
+      "[1,3]"
+    ]
+  },
+  "reference_rules": {
+    "preserve_full_article_title": true,
+    "author_separator": "; ",
+    "journal_abbreviation": "ISO 4",
+    "require_first_appearance_order": true,
+    "do_not_invent_missing_metadata": true
+  },
+  "delivery_requirements": {
+    "cover_letter_required": true,
+    "render_every_docx_page": true,
+    "unresolved_author_queries_block_submission_ready": true,
+    "required_local_artifacts": [
+      "formatted.docx",
+      "formatting-audit.md",
+      "author-queries.md",
+      "change-log.md",
+      "template-provenance.json"
+    ]
+  }
+}

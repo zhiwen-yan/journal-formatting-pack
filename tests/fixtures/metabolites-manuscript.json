@@ -1,0 +1,47 @@
+{
+  "article_type": "Article",
+  "title": "Metabolic Signatures in a Demonstration Cohort",
+  "running_title": "Metabolic Signatures",
+  "authors": [
+    {
+      "name": "Alex Chen",
+      "affiliations": [1],
+      "email": "alex.chen@example.org",
+      "corresponding": true,
+      "equal_contribution": true
+    },
+    {
+      "name": "Morgan Li",
+      "affiliations": [1, 2],
+      "email": "morgan.li@example.org",
+      "corresponding": true,
+      "equal_contribution": true
+    }
+  ],
+  "affiliations": [
+    {
+      "id": 1,
+      "text": "Department of Metabolism, Example University, Shanghai, China"
+    },
+    {
+      "id": 2,
+      "text": "Example Institute of Public Health, Beijing, China"
+    }
+  ],
+  "abstract": "Background/Objectives: This fixture tests the Metabolites workflow. Methods: A deterministic generator test was performed. Results: The expected structural elements were produced. Conclusions: The profile can be checked automatically.",
+  "keywords": [
+    "metabolomics",
+    "biomarkers",
+    "quality assurance"
+  ],
+  "declarations": {
+    "supplementary_materials": "No supplementary materials are provided.",
+    "author_contributions": "Conceptualization, A.C.; methodology, M.L.; writing—review and editing, A.C. and M.L.",
+    "funding": "This research received no external funding.",
+    "institutional_review_board_statement": "Not applicable.",
+    "informed_consent_statement": "Not applicable.",
+    "data_availability_statement": "No new data were created or analyzed in this fixture.",
+    "acknowledgments": "Not applicable.",
+    "conflicts_of_interest": "The authors declare no conflict of interest."
+  }
+}

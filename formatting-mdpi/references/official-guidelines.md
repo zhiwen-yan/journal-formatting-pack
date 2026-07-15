@@ -1,49 +1,67 @@
 # MDPI Official Guidelines
 
-Last checked: 2026-07-06.
+Last checked: 2026-07-15.
 
-Use these official sources first:
+Use these official starting points:
 
-- MDPI author services and instructions: https://www.mdpi.com/authors
+- MDPI author resources: https://www.mdpi.com/authors
+- MDPI layout guide: https://www.mdpi.com/authors/layout
+- MDPI reference guide: https://www.mdpi.com/authors/references
+- Metabolites instructions: https://www.mdpi.com/journal/metabolites/instructions
 - Nutrients instructions: https://www.mdpi.com/journal/nutrients/instructions
 - Foods instructions: https://www.mdpi.com/journal/foods/instructions
 - Journal of Clinical Medicine instructions: https://www.mdpi.com/journal/jcm/instructions
 
-## What To Verify Each Time
+## Source Priority
 
-- Target MDPI journal and article type.
-- Current Word or LaTeX template.
-- Abstract type and word limit.
-- Keyword requirement.
-- Numbered heading style.
-- Reference style, citation numbering, and journal abbreviation rules.
-- Figure and table caption placement.
-- Supplementary material naming.
-- Mandatory statements and their order.
+Use sources in this order:
 
-## Common MDPI Statement Set
+1. Current journal- and article-type-specific instructions and template.
+2. Current MDPI publisher-level guidance.
+3. Local rule profile.
+4. Local structural fallback.
 
-Check whether these statements are required for the target article type:
+Do not present a local fallback as strict MDPI formatting.
 
-- Author Contributions.
-- Funding.
-- Institutional Review Board Statement.
-- Informed Consent Statement.
-- Data Availability Statement.
-- Acknowledgments.
-- Conflicts of Interest.
-- AI-use disclosure or generative AI statement when applicable.
+## Template Acquisition
 
-Use "Not applicable" only when factually true and accepted by the journal instructions.
+1. Select the journal and article type first.
+2. Open the live instructions page and resolve the displayed Word or LaTeX template link.
+3. Follow redirects; do not construct `{journal}-template.dot` URLs.
+4. Record the instructions URL, final template URL, retrieval time, article type, and SHA-256.
+5. Convert `.dot` or `.dotx` to `.docx` in a task-local directory before using `python-docx`.
+6. Verify style names, page size, margins, header/footer, numbering, and line-number settings.
 
-## Initial Structure For Original Research
+Template links can change without a new URL. Recheck them for every strict-formatting task. If automated access is blocked, use the browser session or ask the user to upload the template.
 
-Common MDPI original research structure is:
+## Verify Every Run
 
-1. Introduction.
-2. Materials and Methods.
-3. Results.
-4. Discussion.
-5. Conclusions.
+- article-type structure and whether Conclusions or combined Results/Discussion are optional
+- abstract type, labels, and whether the word limit is hard or advisory
+- keyword minimum, maximum, and separator
+- author–affiliation, correspondence, equal-contribution, and ORCID conventions
+- figure/table/equation placement, captions, resolution, editability, and numbering
+- citation placement, first-appearance order, reference pattern, and journal abbreviations
+- conditional ethics, consent, trial, animal, data, funding, conflict, and AI-use statements
+- cover letter, graphical abstract, highlights, reporting checklist, and supplementary files
 
-Confirm before using this for reviews, case reports, communications, protocols, systematic reviews, or special issue article types.
+## Common Back Matter
+
+Many MDPI research articles use this order, but the exact journal rule wins:
+
+1. Supplementary Materials
+2. Author Contributions
+3. Funding
+4. Institutional Review Board Statement
+5. Informed Consent Statement
+6. Data Availability Statement
+7. Acknowledgments
+8. Conflicts of Interest
+9. Optional abbreviations or appendices
+10. References
+
+Do not flatten conditional requirements into a mandatory list. Ethics and consent depend on the study; Data Availability is frequently required for all articles; AI disclosure depends on the current policy and actual use.
+
+## Safety
+
+Use “Not applicable” only when the authors confirm the factual basis and the journal allows it. Never invent author metadata, approvals, grants, registrations, repository links, conflicts, or reference facts.

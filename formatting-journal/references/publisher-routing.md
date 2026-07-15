@@ -10,6 +10,7 @@ Use this file to identify the likely publisher-specific formatting skill and the
 |---|---|
 | Frontiers, frontiersin.org | `formatting-frontiers` |
 | MDPI, mdpi.com, Nutrients, Foods, IJERPH, JCM | `formatting-mdpi` |
+| Metabolites | `formatting-metabolites` |
 | Wiley, Wiley Online Library, authorservices.wiley.com | `formatting-wiley` |
 | Elsevier, ScienceDirect, Editorial Manager with Elsevier journal | `formatting-elsevier` |
 | Springer, Springer Nature, BMC, BioMed Central, Nature Portfolio, Scientific Reports | `formatting-springer-nature` |
@@ -41,6 +42,7 @@ Use this file to identify the likely publisher-specific formatting skill and the
 - Nutrients: https://www.mdpi.com/journal/nutrients/instructions
 - Foods: https://www.mdpi.com/journal/foods/instructions
 - Journal of Clinical Medicine: https://www.mdpi.com/journal/jcm/instructions
+- Metabolites: https://www.mdpi.com/journal/metabolites/instructions
 - BMC Public Health: https://bmcpublichealth.biomedcentral.com/submission-guidelines/preparing-your-manuscript
 - PLOS ONE: https://journals.plos.org/plosone/s/submission-guidelines
 

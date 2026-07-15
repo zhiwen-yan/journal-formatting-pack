@@ -3,19 +3,39 @@
   "publisher": "MDPI",
   "style": "mdpi",
   "guideline_url": "https://www.mdpi.com/journal/jcm/instructions",
-  "word_template_url": "https://www.mdpi.com/files/word-templates/jcm-template.dot",
+  "word_template_url": "https://mdpi-res.com/files/word-templates/jcm-template.dot",
   "latex_template_url": "https://www.mdpi.com/authors/latex",
   "last_checked": "2026-07-07",
   "reference_style": "MDPI",
   "keyword_rules": {
-    "target_count": 3
+    "min_count": 3,
+    "max_count": 10,
+    "separator": "; "
   },
   "formatting": {
-    "font_name": "Times New Roman",
-    "font_size_pt": 12,
-    "line_spacing": 1.5,
-    "margin_in": 1.0,
-    "section_numbering": true
+    "template_managed": true,
+    "fallback_scope": "structural draft only",
+    "font_name": "Palatino Linotype",
+    "font_size_pt": 10,
+    "line_spacing": 1.0,
+    "body_style_names": [
+      "MDPI_3.1_text",
+      "MDPI_3.2_text_no_indent"
+    ],
+    "title_font_size_pt": 18,
+    "page_width_in": 8.2677,
+    "page_height_in": 11.6929,
+    "top_margin_in": 0.9843,
+    "bottom_margin_in": 0.6299,
+    "left_margin_in": 0.5,
+    "right_margin_in": 0.5,
+    "section_numbering": true,
+    "continuous_line_numbering": true,
+    "line_number_distance_twips": 255,
+    "title_page_break": false,
+    "front_matter_as_heading": false,
+    "inline_keywords": true,
+    "declarations_heading": false
   },
   "required_statements": [
     "Author Contributions",
