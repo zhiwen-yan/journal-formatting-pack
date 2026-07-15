@@ -1,0 +1,4 @@
+interface:
+  display_name: "Format for Metabolites"
+  short_description: "Prepare manuscripts for MDPI Metabolites"
+  default_prompt: "Use $formatting-metabolites to migrate this manuscript into the current official Metabolites template and report unresolved author queries."

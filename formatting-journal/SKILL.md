@@ -1,6 +1,6 @@
 ---
 name: formatting-journal
-description: Universal academic journal formatting and submission-readiness router. Use when the user asks to format, check, revise, polish, package, or prepare a manuscript for journal submission, including SCI, SSCI, PubMed-indexed, medical, nursing, public health, nutrition, pharmacology, life science, clinical research, systematic review, meta-analysis, case report, review, protocol, or original research manuscripts. Route publisher-specific tasks to formatting-frontiers, formatting-mdpi, formatting-wiley, formatting-elsevier, formatting-springer-nature, formatting-taylor-francis, formatting-sage, formatting-oup, formatting-plos, or formatting-generic. Also use this skill when the user wants a generated Word manuscript skeleton or LaTeX manuscript skeleton.
+description: Universal academic journal formatting and submission-readiness router. Use when the user asks to format, check, revise, polish, package, or prepare a manuscript for journal submission, including SCI, SSCI, PubMed-indexed, medical, nursing, public health, nutrition, pharmacology, life science, clinical research, systematic review, meta-analysis, case report, review, protocol, or original research manuscripts. Route publisher-specific tasks to formatting-frontiers, formatting-mdpi, formatting-metabolites, formatting-wiley, formatting-elsevier, formatting-springer-nature, formatting-taylor-francis, formatting-sage, formatting-oup, formatting-plos, or formatting-generic. Also use this skill when the user wants a generated Word manuscript skeleton or LaTeX manuscript skeleton.
 ---
 
 # formatting-journal
@@ -50,6 +50,7 @@ Route by official journal site, publisher imprint, submission system, or author 
 
 - Frontiers journals: use `formatting-frontiers`.
 - MDPI journals: use `formatting-mdpi`.
+- Metabolites: prefer `formatting-metabolites`.
 - Wiley journals: use `formatting-wiley`.
 - Elsevier or ScienceDirect journals: use `formatting-elsevier`.
 - Springer Nature, BMC, or Nature Portfolio journals: use `formatting-springer-nature`.
@@ -84,6 +85,8 @@ When the user does not list specific checkpoints, treat these as default checks:
 ## Output File Generation
 
 When the user explicitly asks for a Word document or LaTeX manuscript skeleton, use `scripts/generate_manuscript.py`.
+
+Do not use the skeleton generator to reformat an existing DOCX. Route existing-document template migration to the publisher or journal skill so semantic objects and package relationships can be preserved and verified.
 
 Read `references/manuscript-generator.md` and use `references/example-manuscript.json` as the schema example.
 

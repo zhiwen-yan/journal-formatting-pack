@@ -1,37 +1,49 @@
 # Rules Library
 
-This folder stores machine-readable journal profiles used by the manuscript generators and by the skill instructions.
+This folder stores machine-readable journal profiles used by generators, audits, and skill instructions.
 
-## Design Principles
+## Authority
 
-- rules are maintained by the repository owner
-- users should not need to update rules themselves
-- official links are recorded for maintenance and verification
-- official template files are not redistributed here by default
+- Treat every rule as a dated cache of official requirements.
+- Let the current journal instructions and article-type template override local values.
+- Record official URLs and `last_checked`.
+- Do not redistribute publisher-owned templates by default.
+- Do not call a local fallback strict template formatting.
 
-## Current Format
+## Core Fields
 
-JSON rule profiles such as:
-
-- `rules/mdpi/nutrients.json`
-- `rules/mdpi/foods.json`
-- `rules/mdpi/jcm.json`
-- `rules/frontiers/frontiers-in-nutrition.json`
-- `rules/plos/plos-one.json`
-
-## Fields
-
-- `journal`
-- `publisher`
-- `style`
-- `guideline_url`
-- `word_template_url`
-- `latex_template_url`
-- `last_checked`
-- `reference_style`
-- `keyword_rules`
+- `journal`, `aliases`, `publisher`, `style`
+- `guideline_url`, `layout_guide_url`, `reference_guide_url`
+- `word_template_url`, `latex_template_url`, `template_variants`
+- `last_checked`, `source_provenance`, `template_policy`
+- `generator_policy`, including explicitly supported article types
+- `default_article_type`, `article_type_sections`
+- `abstract_rules`, `keyword_rules`
 - `formatting`
-- `required_statements`
-- `article_type_sections`
+- `front_matter_rules`
+- `declaration_order`, `back_matter_rules`, `method_disclosures`
+- `figure_rules`, `table_rules`
+- `citation_rules`, `reference_rules`
+- `optional_submission_elements`, `delivery_requirements`
 
-These profiles are intended to drive local generation defaults and to reduce the need for per-request manual guideline fetching.
+Profiles may retain older fields such as `required_statements` for compatibility, but new conditional requirements should use structured objects.
+
+## Conditional Rules
+
+Use `required`, `required_when`, and `optional` instead of forcing every declaration into every manuscript. Keep human ethics, animal ethics, informed consent, trial registration, public-data analysis, and generative-AI disclosure distinct.
+
+Missing factual inputs must become author queries. A rule profile must never supply an approval number, grant, author detail, repository link, conflict, DOI, or other manuscript fact.
+
+## Formatting Values
+
+Formatting values are fallback data for structural drafts and QA expectations. When `template_managed` is true, official template styles and section properties win. Record `fallback_scope` as `structural draft only` when the generator does not apply the official template.
+
+## Validation
+
+At minimum:
+
+1. Parse every JSON profile.
+2. Confirm generator inference for known journal aliases.
+3. Test keyword, abstract, section, and declaration behavior.
+4. Generate and reopen a DOCX.
+5. Run package QA and full-page rendering for template migrations.

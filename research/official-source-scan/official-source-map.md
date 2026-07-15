@@ -6,7 +6,7 @@ This note interprets the latest scan and separates three situations:
 2. `browser-fetchable`: page is reachable in browser/search, but scripted fetch was blocked or unstable
 3. `journal-specific/manual`: there is no single stable publisher-wide template hub, so the exact journal page still needs to be selected
 
-Last reviewed: 2026-07-07.
+Last reviewed: 2026-07-15.
 
 ## MDPI
 
@@ -17,10 +17,12 @@ Last reviewed: 2026-07-07.
   - [Nutrients Instructions](https://www.mdpi.com/journal/nutrients/instructions)
   - [Foods Instructions](https://www.mdpi.com/journal/foods/instructions)
   - [JCM Instructions](https://www.mdpi.com/journal/jcm/instructions)
+  - [Metabolites Instructions](https://www.mdpi.com/journal/metabolites/instructions)
 - Direct template links confirmed from the journal instruction pages:
-  - Nutrients Word: [nutrients-template.dot](https://www.mdpi.com/files/word-templates/nutrients-template.dot)
-  - Foods Word: [foods-template.dot](https://www.mdpi.com/files/word-templates/foods-template.dot)
-  - JCM Word: [jcm-template.dot](https://www.mdpi.com/files/word-templates/jcm-template.dot)
+  - Nutrients Word: [nutrients-template.dot](https://mdpi-res.com/files/word-templates/nutrients-template.dot)
+  - Foods Word: [foods-template.dot](https://mdpi-res.com/files/word-templates/foods-template.dot)
+  - JCM Word: [jcm-template.dot](https://mdpi-res.com/files/word-templates/jcm-template.dot)
+  - Metabolites Word: [metabolites-template.dot](https://mdpi-res.com/files/word-templates/metabolites-template.dot)
 - Direct LaTeX package links confirmed from the MDPI LaTeX page:
   - [MDPI ACS Citation Style](https://mdpi-res.com/data/MDPI_template_ACS.zip?v=20260623)
   - [MDPI APA Citation Style](https://mdpi-res.com/data/MDPI_template_APA.zip?v=20260623)
